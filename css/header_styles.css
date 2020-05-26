@@ -96,6 +96,15 @@
     text-align: right;
     margin-right: 20px;
   }
+
+  .menu {
+    justify-content: flex-start;
+  }
+
+  .menu__item {
+    margin-left: 10px;
+    align-self: center;
+  }
 }
 
 /*
