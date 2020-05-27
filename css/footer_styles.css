@@ -2,7 +2,16 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  /*align-items: center;*/
+  background-color: yellow;
+
+}
+
+
+
+/*.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #footer_container {
@@ -119,12 +128,8 @@
     display: none;
   }
 
-/*  .footer2 .contacts {
-    font-size: 20px;
-    color: #c5cad7;
-  }*/
-
   #footer_container {
     padding: 50px 20px;
   }
 }
+*/

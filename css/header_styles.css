@@ -77,6 +77,10 @@
 }
 
 @media (min-width: 768px) {
+  .header {
+  background-color: transparent;
+}
+
   .button-get-started {
     border: 2px solid #21e6c1;
     border-radius: 0;

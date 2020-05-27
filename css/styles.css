@@ -193,6 +193,28 @@ p, h1 {
   box-shadow: 2px 2px 5px gray;
 }
 
+
+.pricing {
+  display: flex;
+  background: linear-gradient(to right top, #278ea5, #1f4287);
+  color: white;
+  padding: 20px 20px;
+  justify-content: center;
+}
+
+.pricing__main-text {
+  font-size: 28px;
+}
+
+.pricing__main-text:after {
+  content: '*'
+}
+
+.pricing__comment {
+  margin-top: 35px;
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -254,7 +276,18 @@ p, h1 {
     max-width: 945px;
   }
 
+  .pricing {
+    padding: 80px 120px 110px;
+  }
 
+  .pricing__main-text {
+    font-size: 45px;
+  }
+
+  .pricing__comment {
+    margin-top: 35px;
+    font-size: 14px;
+  }
 }
 /*
 @media (max-width: 720px) {
