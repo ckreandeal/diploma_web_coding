@@ -50,7 +50,6 @@ html {
 }
 
 body {
-  /*max-width: 1170px;*/
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -82,14 +81,6 @@ p, h1 {
 	max-width: 540px;
 	margin: 0 auto;
 }
-
-/*.contacts {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: right;
-  margin-right: 45px;
-}*/
-
 
 /* MAIN */
 
@@ -277,7 +268,7 @@ p, h1 {
     font-size: 25px;
   }
 }
-@media (min-width: 1025px)  {
+@media (min-width: 1025px) {
   .container {
     max-width: 945px;
   }
@@ -295,8 +286,4 @@ p, h1 {
     font-size: 14px;
   }
 }
-/*
-@media (max-width: 720px) {
 
-
-}*/

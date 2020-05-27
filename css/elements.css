@@ -1,5 +1,4 @@
 
-
   .main-block .elements__div {
     font-size: 24px;
     background: -webkit-linear-gradient(#278ea5, #1f4287);
@@ -52,7 +51,7 @@
     -webkit-text-fill-color: transparent;
     position: absolute;
     right: 150px;
-    top: 80px;
+    top: 60px;
     -webkit-transform: rotate(-55deg);
        -moz-transform: rotate(-55deg);
         -ms-transform: rotate(-55deg);
@@ -66,7 +65,7 @@
     -webkit-text-fill-color: transparent;
     position: absolute;
     left: 280px;
-    top: 130px;
+    top: 110px;
   }
 
   .pricing .elements {
@@ -264,3 +263,4 @@
     top: 200px;
   }
 }
+
