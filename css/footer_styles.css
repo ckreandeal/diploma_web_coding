@@ -112,9 +112,14 @@
     max-width: 200px;
   }
 
-  .footer__contacts .contacts:not(:first-child){
+  .footer__contacts .contacts:not(:first-child) {
     margin: 20px 0 0 ;
   }
+
+  .footer__contacts .contacts {
+    font-size: 25px;
+  }
+
   .footer__actions .button-get-started {
     display: block;
     margin-right: 0;
