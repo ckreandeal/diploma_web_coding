@@ -2,6 +2,7 @@
 
 @import "header_styles.css";
 @import "footer_styles.css";
+@import "elements.css";
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -91,6 +92,7 @@ p, h1 {
 
 
 /* MAIN */
+
 .main-block{
   overflow-x: hidden;
   background-color: #fff;
@@ -200,6 +202,10 @@ p, h1 {
   color: white;
   padding: 20px 20px;
   justify-content: center;
+}
+
+.pricing .container {
+  position: relative;
 }
 
 .pricing__main-text {
