@@ -1,145 +1,169 @@
+@keyframes elementsScale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-  .main-block .elements__div {
-    font-size: 24px;
-    background: -webkit-linear-gradient(#278ea5, #1f4287);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 50px;
-    top: 80px;
-    -webkit-transform: rotate(30deg);
-       -moz-transform: rotate(30deg);
-        -ms-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-            transform: rotate(30deg);
-  }
 
-  .main-block .elements__div2 {
-    font-size: 14px;
-    background: -webkit-linear-gradient(#278ea5, #1f4287);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    right: 20px;
-    top: 150px;
-    -webkit-transform: rotate(-30deg);
-       -moz-transform: rotate(-30deg);
-        -ms-transform: rotate(-30deg);
-         -o-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-  }
+.elements {
 
-  .main-block .elements__slash {
-    font-size: 22px;
-    background: -webkit-linear-gradient(#278ea5, #1f4287);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 30px;
-    top: 150px;
-    -webkit-transform: rotate(15deg);
-       -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-         -o-transform: rotate(15deg);
-            transform: rotate(15deg);
-  }
+}
 
-  .main-block .elements__braces {
-    font-size: 18px;
-    background: -webkit-linear-gradient(#278ea5, #1f4287);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    right: 150px;
-    top: 60px;
-    -webkit-transform: rotate(-55deg);
-       -moz-transform: rotate(-55deg);
-        -ms-transform: rotate(-55deg);
-         -o-transform: rotate(-55deg);
-            transform: rotate(-55deg);
-  }
-  .main-block .elements__number {
-    font-size: 23px;
-    background: -webkit-linear-gradient(#278ea5, #1f4287);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 280px;
-    top: 110px;
-  }
 
-  .pricing .elements {
-    display: none;
-  }
+.main-block .elements__div {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 24px;
+  background: -webkit-linear-gradient(#278ea5, #1f4287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 50px;
+  top: 80px;
+  -webkit-transform: rotate(30deg);
+     -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+       -o-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
 
-  .pricing .elements__div {
-    font-size: 36px;
-    background: -webkit-linear-gradient(#21e6c1, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 100px;
-    top: 50px;
-    -webkit-transform: rotate(30deg);
-       -moz-transform: rotate(30deg);
-        -ms-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-            transform: rotate(30deg);
-  }
+.main-block .elements__div2 {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 14px;
+  background: -webkit-linear-gradient(#278ea5, #1f4287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  -webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+       -o-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
 
-  .pricing .elements__div2 {
-    font-size: 26px;
-    background: -webkit-linear-gradient(#21e6c1, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 550px;
-    top: 250px;
-    -webkit-transform: rotate(-30deg);
-       -moz-transform: rotate(-30deg);
-        -ms-transform: rotate(-30deg);
-         -o-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-  }
+.main-block .elements__slash {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 22px;
+  background: -webkit-linear-gradient(#278ea5, #1f4287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 30px;
+  top: 150px;
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+       -o-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
 
-  .pricing .elements__slash {
-    font-size: 43px;
-    background: -webkit-linear-gradient(#21e6c1, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 150px;
-    top: 450px;
-    -webkit-transform: rotate(15deg);
-       -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-         -o-transform: rotate(15deg);
-            transform: rotate(15deg);
-  }
+.main-block .elements__braces {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 18px;
+  background: -webkit-linear-gradient(#278ea5, #1f4287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  right: 150px;
+  top: 60px;
+  -webkit-transform: rotate(-55deg);
+     -moz-transform: rotate(-55deg);
+      -ms-transform: rotate(-55deg);
+       -o-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+}
+.main-block .elements__number {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 23px;
+  background: -webkit-linear-gradient(#278ea5, #1f4287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 280px;
+  top: 110px;
+}
 
-  .pricing .elements__braces {
-    font-size: 40px;
-    background: -webkit-linear-gradient(#21e6c1, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    right: 150px;
-    top: 80px;
-    -webkit-transform: rotate(-55deg);
-       -moz-transform: rotate(-55deg);
-        -ms-transform: rotate(-55deg);
-         -o-transform: rotate(-55deg);
-            transform: rotate(-55deg);
-  }
-  .pricing .elements__number {
-    font-size: 46px;
-    background: -webkit-linear-gradient(#21e6c1, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    left: 400px;
-    top: 200px;
-  }
+.pricing .elements {
+  display: none;
+}
+
+.pricing .elements__div {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 36px;
+  background: -webkit-linear-gradient(#21e6c1, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  -webkit-transform: rotate(30deg);
+     -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+       -o-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.pricing .elements__div2 {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 26px;
+  background: -webkit-linear-gradient(#21e6c1, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 550px;
+  top: 250px;
+  -webkit-transform: rotate(-30deg);
+     -moz-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+       -o-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.pricing .elements__slash {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 43px;
+  background: -webkit-linear-gradient(#21e6c1, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 150px;
+  top: 450px;
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+       -o-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.pricing .elements__braces {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 40px;
+  background: -webkit-linear-gradient(#21e6c1, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  right: 150px;
+  top: 80px;
+  -webkit-transform: rotate(-55deg);
+     -moz-transform: rotate(-55deg);
+      -ms-transform: rotate(-55deg);
+       -o-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+}
+.pricing .elements__number {
+  animation: 2s ease 0s 1 elementsScale;
+  font-size: 46px;
+  background: -webkit-linear-gradient(#21e6c1, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 400px;
+  top: 200px;
+}
 
 @media (min-width: 768px) {
   .main-block .elements__div {
