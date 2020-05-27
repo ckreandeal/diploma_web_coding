@@ -213,18 +213,18 @@ p, h1 {
   .main-block__photo-container {
     order: 1;
     position: absolute;
-    right: -15%;
-    width: 650px;
+    right: -25%;
+    width: 750px;
     height: 630px;
     padding-left: 200px;
-    background: url('../img/ellipse_blue.png') no-repeat center 150px;
+    background: url('../img/ellipse_blue.png') no-repeat center 250px;
     background-size: contain;
     z-index: -10;
   }
 
   .main-block__content {
     padding: 200px 0;
-    width: 50%;
+    width: 55%;
   }
 
   .photo-container__main-photo {
@@ -249,7 +249,7 @@ p, h1 {
     font-size: 25px;
   }
 }
-@media (max-width: 1024px)  {
+@media (min-width: 1025px)  {
   .container {
     max-width: 945px;
   }
