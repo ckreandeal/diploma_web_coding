@@ -86,6 +86,7 @@ p, h1 {
 
 .main-block{
   overflow-x: hidden;
+  overflow-y: hidden;
   background-color: #fff;
 }
 
@@ -188,6 +189,7 @@ p, h1 {
 
 
 .pricing {
+  overflow-x: hidden;
   display: flex;
   background: linear-gradient(to right top, #278ea5, #1f4287);
   color: white;

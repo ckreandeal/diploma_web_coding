@@ -1,197 +1,123 @@
 @keyframes elementsScale {
-  0% {
-    transform: scale(0);
+  from {
+    transform: scale(0) ;
   }
-  100% {
-    transform: scale(1);
+  to {
+    transform: scale(1) rotate(30deg);
   }
 }
 
-
-.elements {
-
+.elements__item {
+  animation: elementsScale 2s ease-in-out 1;
+  animation-fill-mode: forwards;
+  background: -webkit-linear-gradient(#278ea5, #1f4287);
+  position: absolute;
 }
 
-
-.main-block .elements__div {
-  animation: 2s ease 0s 1 elementsScale;
-  font-size: 24px;
+.main-block .elements__item {
   background: -webkit-linear-gradient(#278ea5, #1f4287);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: absolute;
+}
+
+.pricing .elements__item {
+  background: -webkit-linear-gradient(#21e6c1, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-block .elements__item--1 {
+  font-size: 24px;
   left: 50px;
   top: 80px;
-  -webkit-transform: rotate(30deg);
-     -moz-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-       -o-transform: rotate(30deg);
-          transform: rotate(30deg);
 }
 
-.main-block .elements__div2 {
-  animation: 2s ease 0s 1 elementsScale;
+.main-block .elements__item--2 {
   font-size: 14px;
-  background: -webkit-linear-gradient(#278ea5, #1f4287);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   right: 20px;
   top: 150px;
-  -webkit-transform: rotate(-30deg);
-     -moz-transform: rotate(-30deg);
-      -ms-transform: rotate(-30deg);
-       -o-transform: rotate(-30deg);
-          transform: rotate(-30deg);
 }
 
-.main-block .elements__slash {
-  animation: 2s ease 0s 1 elementsScale;
+.main-block .elements__item--3 {
   font-size: 22px;
-  background: -webkit-linear-gradient(#278ea5, #1f4287);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   left: 30px;
-  top: 150px;
-  -webkit-transform: rotate(15deg);
-     -moz-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-       -o-transform: rotate(15deg);
-          transform: rotate(15deg);
+  top: 200px;
 }
 
-.main-block .elements__braces {
-  animation: 2s ease 0s 1 elementsScale;
+.main-block .elements__item--4 {
   font-size: 18px;
-  background: -webkit-linear-gradient(#278ea5, #1f4287);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   right: 150px;
   top: 60px;
-  -webkit-transform: rotate(-55deg);
-     -moz-transform: rotate(-55deg);
-      -ms-transform: rotate(-55deg);
-       -o-transform: rotate(-55deg);
-          transform: rotate(-55deg);
 }
-.main-block .elements__number {
-  animation: 2s ease 0s 1 elementsScale;
+
+.main-block .elements__item--5 {
   font-size: 23px;
-  background: -webkit-linear-gradient(#278ea5, #1f4287);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  left: 280px;
-  top: 110px;
+  left: 300px;
+  top: 60px;
 }
 
 .pricing .elements {
   display: none;
 }
 
-.pricing .elements__div {
-  animation: 2s ease 0s 1 elementsScale;
+.pricing .elements__item--1 {
   font-size: 36px;
-  background: -webkit-linear-gradient(#21e6c1, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   left: 100px;
   top: 50px;
-  -webkit-transform: rotate(30deg);
-     -moz-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-       -o-transform: rotate(30deg);
-          transform: rotate(30deg);
 }
 
-.pricing .elements__div2 {
-  animation: 2s ease 0s 1 elementsScale;
+.pricing .elements__item--2 {
   font-size: 26px;
-  background: -webkit-linear-gradient(#21e6c1, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   left: 550px;
   top: 250px;
-  -webkit-transform: rotate(-30deg);
-     -moz-transform: rotate(-30deg);
-      -ms-transform: rotate(-30deg);
-       -o-transform: rotate(-30deg);
-          transform: rotate(-30deg);
 }
 
-.pricing .elements__slash {
-  animation: 2s ease 0s 1 elementsScale;
+.pricing .elements__item--3 {
   font-size: 43px;
-  background: -webkit-linear-gradient(#21e6c1, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   left: 150px;
   top: 450px;
-  -webkit-transform: rotate(15deg);
-     -moz-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-       -o-transform: rotate(15deg);
-          transform: rotate(15deg);
 }
 
-.pricing .elements__braces {
-  animation: 2s ease 0s 1 elementsScale;
+.pricing .elements__item--4 {
   font-size: 40px;
-  background: -webkit-linear-gradient(#21e6c1, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
   right: 150px;
   top: 80px;
-  -webkit-transform: rotate(-55deg);
-     -moz-transform: rotate(-55deg);
-      -ms-transform: rotate(-55deg);
-       -o-transform: rotate(-55deg);
-          transform: rotate(-55deg);
 }
-.pricing .elements__number {
-  animation: 2s ease 0s 1 elementsScale;
+
+.pricing .elements__item--5 {
   font-size: 46px;
-  background: -webkit-linear-gradient(#21e6c1, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   position: absolute;
   left: 400px;
   top: 200px;
 }
 
 @media (min-width: 768px) {
-  .main-block .elements__div {
+  .main-block .elements__item--1 {
     font-size: 36px;
-    left: 100px;
-    top: 50px;
+    left: -100px;
+    top: 250px;
   }
 
-  .main-block .elements__div2 {
+  .main-block .elements__item--2 {
     font-size: 26px;
-    left: 260px;
-    top: 240px;
+    left: 160px;
+    top: 200px;
   }
 
-  .main-block .elements__slash {
+  .main-block .elements__item--3 {
     font-size: 43px;
     left: 150px;
     top: 450px;
   }
 
-  .main-block .elements__braces {
+  .main-block .elements__item--4 {
     font-size: 40px;
     right: 250px;
     top: 80px;
   }
-  .main-block .elements__number {
+  .main-block .elements__item--5 {
     font-size: 46px;
-    left: 400px;
+    left: 800px;
     top: 200px;
   }
 
@@ -199,30 +125,30 @@
     display: block;
   }
 
-  .pricing .elements__div {
-    font-size: 20px;
+  .pricing .elements__item--1 {
+    font-size: 10px;
     left: 100px;
     top: 70px;
   }
 
-  .pricing .elements__div2 {
+  .pricing .elements__item--2 {
     font-size: 12px;
     left: 550px;
     top: 50px;
   }
 
-  .pricing .elements__slash {
+  .pricing .elements__item--3 {
     font-size: 22px;
-    left: 590px;
+    left: 690px;
     top: 50px;
   }
 
-  .pricing .elements__braces {
+  .pricing .elements__item--4 {
     font-size: 18px;
     right: 150px;
-    top: 80px;
+    top: 100px;
   }
-  .pricing .elements__number {
+  .pricing .elements__item--5 {
     font-size: 25px;
     left: 400px;
     top: 40px;
@@ -230,59 +156,59 @@
 }
 
 @media (min-width: 1025px) {
-  .main-block .elements__div {
+  .main-block .elements__item--1 {
     font-size: 36px;
-    left: 100px;
-    top: 50px;
+    left: -150px;
+    top: 150px;
   }
 
-  .main-block .elements__div2 {
+  .main-block .elements__item--2 {
     font-size: 26px;
     left: 550px;
     top: 250px;
   }
 
-  .main-block .elements__slash {
+  .main-block .elements__item--3 {
     font-size: 43px;
     left: 150px;
     top: 450px;
   }
 
-  .main-block .elements__braces {
+  .main-block .elements__item--4 {
     font-size: 40px;
-    right: 150px;
+    right: -150px;
     top: 80px;
   }
-  .main-block .elements__number {
+  .main-block .elements__item--5 {
     font-size: 46px;
     left: 400px;
-    top: 200px;
+    top: 100px;
   }
 
-  .pricing .elements__div {
+  .pricing .elements__item--1 {
     font-size: 36px;
-    left: 80px;
-    top: -30px;
+    left: -100px;
+    top: 10px;
   }
 
-  .pricing .elements__div2 {
+  .pricing .elements__item--2 {
     font-size: 26px;
     left: 550px;
     top: 200px;
   }
 
-  .pricing .elements__slash {
+  .pricing .elements__item--3 {
     font-size: 43px;
-    right: 0;
-    top: 150px;
+    left: 1000px;
+    top: 180px;
   }
 
-  .pricing .elements__braces {
+  .pricing .elements__item--4 {
     font-size: 40px;
-    right: 150px;
-    top: 80px;
+    right: 50px;
+    top: 50px;
   }
-  .pricing .elements__number {
+  .pricing .elements__item--5 {
     left: 400px;
     top: 200px;
   }

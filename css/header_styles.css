@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 
-.menu-mobile-button {
+.header__toggle {
   outline: none;
   width: 35px;
   height: 35px;
@@ -42,7 +42,7 @@
   justify-content: space-between;
   list-style: none;
 }
-.menu-nav {
+.header__menu {
   display: none;
   position: relative;
   order: 1;
@@ -113,11 +113,11 @@
 }
 
 @media (min-width: 1024px)  {
-  .menu-mobile-button {
+  .header__toggle {
     display: none;
   }
 
-  .menu-nav{
+  .header__menu{
     display: block;
     order: -1;
     width: auto;

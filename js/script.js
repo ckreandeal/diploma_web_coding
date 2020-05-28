@@ -3,11 +3,11 @@ $( document ).ready(function() {
 
 
 
- 	$('.menu-mobile-button').on('click', function(event){
+ 	$('.header__toggle').on('click', function(event){
     	event.preventDefault()
     	$('body, html').toggleClass('scroll-fixed')
-        $('.menu-nav').toggle()
-        $('.menu-mobile-button').toggleClass('button-active')
+        $('.header__menu').toggle()
+        $('.header__toggle').toggleClass('button-active')
 
 
     });
