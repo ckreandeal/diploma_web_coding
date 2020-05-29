@@ -31,12 +31,12 @@
   margin: 25px 0 0 ;
 }
 
-.footer__menu .footer__item {
+.footer__menu .footer__menu__item {
   margin-bottom: 10px;
   line-height: 25px;
 }
 
-.footer__menu .footer__item a{
+.footer__menu .footer__menu__item a{
   font-size: 15px;
   color: #8993ad;
 }
