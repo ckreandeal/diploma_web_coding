@@ -8,7 +8,7 @@
 }
 
 #footer-container {
-  padding: 50px 20px;
+  padding: 25px 20px 0;
 }
 
 .footer__contacts, .footer__actions {
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 1em;
+  font-size: 15px;
   color: #c5cad7;
 }
 
@@ -28,31 +28,37 @@
 }
 
 .footer__contacts .contacts:not(:first-child){
-  margin: 20px 0 0 ;
+  margin: 25px 0 0 ;
 }
 
 .footer__menu .footer__item {
   margin-bottom: 10px;
+  line-height: 25px;
 }
 
 .footer__menu .footer__item a{
-  font-size: 18px;
+  font-size: 15px;
   color: #8993ad;
 }
 
 .footer__actions {
   flex-direction: row;
   width: 100%;
+  margin-top: 30px;
 }
 
 .footer__actions .button-get-started {
   display: none;
 }
 
+.footer__actions .button-get-info {
+    margin: 0;
+  }
+
 .social-networks {
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 0;
+  margin: 50px 0 40px;
 }
 
 .sn-icon {
@@ -88,12 +94,12 @@
 }
 
 .copyright {
-  padding: 30px 0;
+  padding: 15px 0;
   display: block;
-  height: 80px;
   background-color: #071e3d;
   color: white;
   text-align: center;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {

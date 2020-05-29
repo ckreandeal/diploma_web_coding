@@ -167,17 +167,17 @@ p, h1 {
 }
 
 .srvices {
-  height: 650px;
-  background-color: white;
+  height: 910px;
+  background-color: green;
 
 }
 
 .portfolio {
-  height: 845px;
+  height: 655px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  background-color: red;
 }
 
 .arrow {
@@ -209,20 +209,23 @@ p, h1 {
 
 
 .pricing {
+  height: 435px;
   overflow-x: hidden;
   display: flex;
   background: linear-gradient(to right top, #278ea5, #1f4287);
   color: white;
-  padding: 20px 20px;
+  padding: 20px 0;
   justify-content: center;
 }
 
 .pricing .container {
+  padding: 20px 20px;
   position: relative;
 }
 
 .pricing__main-text {
   font-size: 28px;
+  line-height: 40px;
 }
 
 .pricing__main-text:after {
@@ -231,7 +234,12 @@ p, h1 {
 
 .pricing__comment {
   margin-top: 35px;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.pricing__comment:before {
+  content: '* ';
 }
 
 @media (min-width: 768px) {
