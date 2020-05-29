@@ -169,7 +169,6 @@ p, h1 {
 .srvices {
   height: 910px;
   background-color: green;
-
 }
 
 .portfolio {
@@ -307,6 +306,36 @@ p, h1 {
     font-size: 25px;
     margin-bottom: 40px;
   }
+
+  .srvices {
+    height: 890px;
+  }
+
+  .portfolio {
+    height: 1040px;
+  }
+
+  .pricing .container {
+    padding: 55px 0;
+  }
+
+  .pricing {
+    height: auto;
+    /*height: 365px;*/
+  }
+
+  .pricing__main-text {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .pricing__comment {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+
+
 }
 @media (min-width: 1025px) {
   .container {
