@@ -3,7 +3,7 @@
 }
 
 #header-container {
-  padding: 20px 20px;
+  padding: 18px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,10 +12,10 @@
 
 .header__toggle {
   outline: none;
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 24px;
   background: url('../img/menu_mobile_blue.png') center no-repeat;
-  background-size: 30px;
+  background-size: contain;
   border: none;
 }
 
@@ -23,16 +23,13 @@
   background: url('../img/close.png') center no-repeat;
 }
 
-.button-get-started {
-  border: none;
+.button-get-started--mobile {
+  border: none !important;
   border-radius: 50%;
   background-color: #fff;
   background: url('../img/call_icon_blue.png') center no-repeat;
-  width: 30px;
-  height: 30px;
-  outline: none;
-  cursor: pointer;
-  font-size: 0;
+  width: 30px !important;
+  font-size: 0 !important;
 }
 
 .menu {
@@ -72,33 +69,36 @@
   border-bottom: 1px solid #21e6c1;
 }
 
-.button-get-started:hover {
-  box-shadow: 2px 2px 5px gray;
-}
 
 @media (min-width: 768px) {
+  #header-container {
+    padding: 30px 0;
+  }
+
   .header {
   background-color: transparent;
-}
+  }
+
+  .header__toggle {
+    width: 45px;
+    height: 45px;
+  }
 
   .button-get-started {
-    border: 2px solid #21e6c1;
-    border-radius: 0;
-    background-color: #fff;
+    background-color: #fff !important;
+    color: #071e3d !important;
+    border: 1px solid #21e6c1 !important;
+    width: 200px !important;
     background-image: none;
-    width: 200px;
-    height: 46px;
-    color: #071e3d;
-    text-align: center;
-    font-size: 16px;
-    outline: none;
-    cursor: pointer;
+    font-size: 18px !important;
   }
 
   .header__contacts {
+    font-size: 25px;
+    font-weight: bold;
     flex-grow: 1;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 35px;
     font-weight: bold;
   }
 
@@ -106,13 +106,13 @@
     justify-content: flex-start;
   }
 
-  .menu__item {
-    margin-left: 10px;
+  .menu__item:not(:first-child){
+    margin-left: 30px;
     align-self: center;
   }
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1025px)  {
   .header__toggle {
     display: none;
   }

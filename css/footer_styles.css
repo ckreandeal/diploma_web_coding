@@ -31,11 +31,11 @@
   margin: 20px 0 0 ;
 }
 
-.footer__menu .item {
+.footer__menu .footer__item {
   margin-bottom: 10px;
 }
 
-.footer__menu .item a{
+.footer__menu .footer__item a{
   font-size: 18px;
   color: #8993ad;
 }
