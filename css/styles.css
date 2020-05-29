@@ -168,7 +168,7 @@ p, h1 {
 
 .srvices {
   height: 910px;
-  background-color: green;
+  background-color: white;
 }
 
 .portfolio {
@@ -176,7 +176,7 @@ p, h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: transparent;
 }
 
 .arrow {
@@ -333,10 +333,8 @@ p, h1 {
     font-size: 18px;
     line-height: 30px;
   }
-
-
-
 }
+
 @media (min-width: 1025px) {
   .container {
     min-width: 945px;
@@ -363,8 +361,16 @@ p, h1 {
     margin-bottom: 40px;
   }
 
-  .pricing {
-    padding: 80px 120px 110px;
+  .srvices {
+    height: 640px;
+  }
+
+  .portfolio {
+    height: 865px;
+  }
+
+  .pricing .container {
+    padding: 50px 120px 57px;
   }
 
   .pricing__main-text {
