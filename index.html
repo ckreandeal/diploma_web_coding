@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/script.js"></script>
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
   <header class="header">
@@ -46,7 +48,7 @@
     </section> <!--  .main-block -->
     <section class="srvices">
       <div class="container">
-        <h2 class="services__title">Services</h2> <!--  .services__title -->
+        <h2 class="section__title">Services</h2> <!--  .section__title -->
         <div class="services__list">
           <div class="services__list__item list__item--1">Landing pages and <br>complex websites development</div> <!--  .list__item -->
           <div class="services__list__item list__item--2">Responsive web design <br>for all devices and browsers</div> <!--  .list__item -->
@@ -57,8 +59,34 @@
       </div> <!--  .container -->
     </section> <!--  .srvices -->
     <section class="portfolio">
-      <button class="left arrow "></button>
-      <button class="right arrow "></button>
+      <div class="container">
+        <h2 class="section__title">My projects</h2> <!--  .section__title -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide potfolio__card">
+              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
+              <div class="porfolio__card__title">Children clothes website</div> <!--  .porfolio__card__title -->
+            </div> <!--  .potfolio__card -->
+            <div class="swiper-slide potfolio__card">
+              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
+              <div class="porfolio__card__title">News website</div> <!--  .porfolio__card__title -->
+            </div> <!--  .potfolio__card -->
+            <div class="swiper-slide potfolio__card">
+              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
+              <div class="porfolio__card__title">Cool Facts - mobile app</div> <!--  .porfolio__card__title -->
+            </div> <!--  .potfolio__card -->
+            <div class="swiper-slide potfolio__card">
+              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
+              <div class="porfolio__card__title">Chat bot app</div> <!--  .porfolio__card__title -->
+            </div> <!--  .potfolio__card -->
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="swiper-button-prev prev slider__button prev"></div>
+        <div class="swiper-button-next next slider__button next"></div>
+        <button class="button button-get-info">Get info</button>
+      </div> <!--  .container -->
     </section> <!--  .portfolio -->
     <section class="pricing" >
       <div class="container">
@@ -100,6 +128,8 @@
     </div>
     <p class="copyright">© Danila Kornilov, 2019-2020</p> <!--  .copyright -->
   </footer>
-
+  <script src="js/swiper.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
+
 </html>

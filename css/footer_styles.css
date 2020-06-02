@@ -7,7 +7,7 @@
   margin: 0;
 }
 
-#footer-container {
+.container.footer {
   padding: 25px 20px 0;
 }
 
@@ -103,7 +103,7 @@
 }
 
 @media (min-width: 768px) {
-  #footer-container {
+  .container.footer {
     padding: 100px 0 75px;
   }
 
@@ -135,9 +135,11 @@
   }
 
   .footer__actions .button-get-started {
-    width: 250px !important;
+    width: 250px;
     display: block;
     margin-right: 0;
+    border: 1px solid #21e6c1;
+    background-color: #fff;
   }
 
   .footer__actions .button-get-info {
@@ -155,7 +157,7 @@
 }
 
 @media (min-width: 1025px) {
-  #footer-container {
+  .container.footer {
     padding: 80px 0 75px;
   }
 }
