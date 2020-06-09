@@ -4,7 +4,6 @@
 @import "footer_styles.css";
 @import "elements.css";
 @import "swiper.min.css";
-@import "slider.css";
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -235,11 +234,22 @@ img {
   flex-direction: column;
 }
 
-.swiper-container {
+.slider {
   width: 100%;
   max-width: 540px;
   height: 100%;
-  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.slider__item {
+  flex-shrink: 0;
 }
 
 .protfolio__card__picture {
@@ -254,11 +264,30 @@ img {
   color: #8993ad;
 }
 
-.swiper-pagination-bullet {
-  background-color: #21e6c1;
+.slider__pagination {
+  margin-top: 100px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.paginator__item {
+  border: 1px solid #21e6c1;
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
-  outline: none;
+  border-radius: 50%;
+}
+
+.paginator__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.paginator__item--active {
+  border-color: #21e6c1;
+  background-color: #21e6c1;
 }
 
 .portfolio .button-get-info {
@@ -421,9 +450,8 @@ img {
     font-size: 25px;
   }
 
-  .swiper-container {
+  .slider {
     max-width: 945px;
-    padding-bottom: 133px;
   }
 
   .protfolio__card__picture {
@@ -431,7 +459,11 @@ img {
     height: 360px;
   }
 
-  .swiper-pagination-bullet {
+  .slider__pagination {
+    margin-top: 133px;
+  }
+
+  .paginator__item {
     width: 20px;
     height: 20px;
     margin: 0 20px;
@@ -524,7 +556,7 @@ img {
     padding-bottom: 105px;
   }
 
-  .swiper-container {
+  .slider {
     max-width: 1170px;
     padding-bottom: 0;
   }
@@ -540,6 +572,7 @@ img {
 
   .slider__button {
     display: block;
+    position: absolute;
     height: 65px;
     width: 65px;
     border: none;
@@ -548,19 +581,19 @@ img {
     background-color: transparent;
     cursor: pointer;
     background-size: contain;
-    top: auto;
+    top: 45%;
   }
 
   .slider__button:after {
     content: none;
   }
 
-  .prev {
+  .slider__button--prev {
     background-image: url('../img/arrow.png');
     left: -30px;
   }
 
-  .next {
+  .slider__button--next {
     right: -30px;
     -webkit-transform: scaleX(-1);
        -moz-transform: scaleX(-1);
@@ -574,7 +607,7 @@ img {
     box-shadow: 2px 2px 5px gray;
   }
 
-  .swiper-pagination {
+  .slider__pagination {
     display: none;
   }
 

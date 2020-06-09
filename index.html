@@ -29,7 +29,7 @@
   <main>
     <section class="main-block">
       <div class="container" id="top-card">
-        <div class="elements" aria-hidden=”true>
+        <div class="elements" aria-hidden="true">
           <span class="elements__item elements__item--1">#</span>
           <span class="elements__item elements__item--2">&lt;div&gt;</span>
           <span class="elements__item elements__item--3">&lt;div&gt;</span>
@@ -61,30 +61,29 @@
     <section class="portfolio">
       <div class="container">
         <h2 class="section__title">My projects</h2> <!--  .section__title -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide potfolio__card">
-              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <div class="porfolio__card__title">Children clothes website</div> <!--  .porfolio__card__title -->
-            </div> <!--  .potfolio__card -->
-            <div class="swiper-slide potfolio__card">
+        <div class="slider">
+          <ul class="slider__list">
+              <li class="slider__item potfolio__card">
+                <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
+                <div class="porfolio__card__title">Children clothes website</div> <!--  .porfolio__card__title -->
+              </li> <!--  .potfolio__card -->
+            <li class="slider__item potfolio__card">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <div class="porfolio__card__title">News website</div> <!--  .porfolio__card__title -->
-            </div> <!--  .potfolio__card -->
-            <div class="swiper-slide potfolio__card">
+            </li> <!--  .potfolio__card -->
+            <li class="slider__item potfolio__card">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <div class="porfolio__card__title">Cool Facts - mobile app</div> <!--  .porfolio__card__title -->
-            </div> <!--  .potfolio__card -->
-            <div class="swiper-slide potfolio__card">
+            </li> <!--  .potfolio__card -->
+            <li class="slider__item potfolio__card">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <div class="porfolio__card__title">Chat bot app</div> <!--  .porfolio__card__title -->
-            </div> <!--  .potfolio__card -->
-          </div>
-          <div class="swiper-pagination"></div>
-
-        </div>
-        <div class="swiper-button-prev prev slider__button prev"></div>
-        <div class="swiper-button-next next slider__button next"></div>
+            </li> <!--  .potfolio__card -->
+          </ul>
+          <div class="slider__pagination paginator"></div>
+          <button class="slider__button slider__button--prev"></button>
+          <button class="slider__button slider__button--next"></button>
+      </div>
         <button class="button button-get-info">Get info</button>
       </div> <!--  .container -->
     </section> <!--  .portfolio -->
@@ -130,6 +129,7 @@
   </footer>
   <script src="js/swiper.min.js"></script>
   <script src="js/slider.js"></script>
+
 </body>
 
 </html>

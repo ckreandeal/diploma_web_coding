@@ -1,14 +1,16 @@
-const slider = document.querySelector('.swiper-container')
-
-let mySwiper = new Swiper (slider, {
+new Swiper ('.slider', {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
   centerSlides: true,
+  wrapperClass: 'slider__list',
+  slideClass: 'slider__item',
 
   pagination: {
-      el: '.swiper-pagination',
+      el: '.slider__pagination',
       type: 'bullets',
+      bulletClass: 'paginator__item',
+      bulletActiveClass: 'paginator__item--active',
       clickable: true,
     },
     breakpoints: {
@@ -20,8 +22,8 @@ let mySwiper = new Swiper (slider, {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.slider__button--next',
+          prevEl: '.slider__button--prev',
         },
       }
     }
