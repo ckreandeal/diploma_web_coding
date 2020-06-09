@@ -82,6 +82,7 @@ ul{
   padding: 0;
 }
 
+
 p, h1, h2 {
   margin: 0;
 }
@@ -530,6 +531,7 @@ img {
   .services__list {
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 87px;;
   }
 
   .services__list__item {
@@ -540,6 +542,11 @@ img {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .services__list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
 
   .srvices .button-get-info {
     margin-top: 10px;
