@@ -13,13 +13,13 @@
 </head>
 <body>
   <header class="header">
-    <div class="container" id="header-container">
+    <div class="container header__wrapper" id="header-container">
       <button class="header__toggle" href="#" area-label="open menu"></button>
       <nav class="header__menu">
         <ul class="menu">
-          <li class="menu__item"><a href="#">Services</a></li> <!--  .menu__item -->
-          <li class="menu__item"><a href="#">Portfolio</a></li> <!--  .menu__item -->
-          <li class="menu__item"><a href="#">Pricing</a></li> <!--  .menu__item -->
+          <li ><a class="menu__item" href="#srvices">Services</a></li> <!--  .menu__item -->
+          <li ><a class="menu__item" href="#portfolio">Portfolio</a></li> <!--  .menu__item -->
+          <li ><a class="menu__item" href="#pricing">Pricing</a></li> <!--  .menu__item -->
         </ul> <!--  .menu -->
       </nav>
       <a class="header__contacts" href="tel:+353852860646" target="_blank">+353 (85) 286-06-46</a> <!--  .contacts -->
@@ -28,7 +28,7 @@
   </header>
   <main>
     <section class="main-block">
-      <div class="container" id="top-card">
+      <div class="container main-block__wrapper" id="top-card">
         <div class="elements" aria-hidden="true">
           <span class="elements__item elements__item--1">#</span>
           <span class="elements__item elements__item--2">&lt;div&gt;</span>
@@ -46,20 +46,20 @@
         </div> <!--  .main-block__content -->
       </div> <!--  #top_card -->
     </section> <!--  .main-block -->
-    <section class="srvices">
-      <div class="container">
+    <section class="services" id="services">
+      <div class="container services__wrapper">
         <h2 class="section__title">Services</h2> <!--  .section__title -->
         <ul class="services__list">
-          <li class="services__list__item list__item--1">Landing pages and <br>complex websites development</li> <!--  .list__item -->
-          <li class="services__list__item list__item--2">Responsive web design <br>for all devices and browsers</li> <!--  .list__item -->
-          <li class="services__list__item list__item--3">Frontend development <br>and coding</li> <!--  .list__item -->
-          <li class="services__list__item list__item--4">Fixing issues and <br>layout optimization</li> <!--  .list__item -->
+          <li class="services__item list__item--1">Landing pages and <br>complex websites development</li> <!--  .list__item -->
+          <li class="services__item list__item--2">Responsive web design <br>for all devices and browsers</li> <!--  .list__item -->
+          <li class="services__item list__item--3">Frontend development <br>and coding</li> <!--  .list__item -->
+          <li class="services__item list__item--4">Fixing issues and <br>layout optimization</li> <!--  .list__item -->
         </ul> <!--  .services__list -->
-        <button class="button button-get-info">Get info</button>
+        <button class="button button-get-info services__button">Get info</button>
       </div> <!--  .container -->
     </section> <!--  .srvices -->
-    <section class="portfolio">
-      <div class="container">
+    <section class="portfolio" id="portfolio">
+      <div class="container portfolio__wrapper">
         <h2 class="section__title">My projects</h2> <!--  .section__title -->
         <div class="slider">
           <ul class="slider__list">
@@ -84,11 +84,11 @@
           <button class="slider__button slider__button--prev"></button>
           <button class="slider__button slider__button--next"></button>
       </div>
-        <button class="button button-get-info">Get info</button>
+        <button class="button button-get-info portfolio__button">Get info</button>
       </div> <!--  .container -->
     </section> <!--  .portfolio -->
-    <section class="pricing" >
-      <div class="container">
+    <section class="pricing" id="pricing">
+      <div class="container pricing__wrapper">
         <div class="elements">
           <span class="elements__item elements__item--1">#</span>
           <span class="elements__item elements__item--2">&lt;div&gt;</span>
@@ -111,12 +111,12 @@
         </ul>
       </nav>
       <address class="footer__contacts">
-        <a class="contacts" href="tel:+353852860646" target="_blank"><ion-icon name="call-sharp"></ion-icon>+353 (85) 286-06-46</a>
-        <a class="contacts" href="mailto:kornilovdanilaa@gmail.com" target="_blank"><ion-icon name="mail-open"></ion-icon>kornilovdanilaa@gmail.com</a>
+        <a class="contacts footer__contact" href="tel:+353852860646" target="_blank"><ion-icon name="call-sharp"></ion-icon>+353 (85) 286-06-46</a>
+        <a class="contacts footer__contact" href="mailto:kornilovdanilaa@gmail.com" target="_blank"><ion-icon name="mail-open"></ion-icon>kornilovdanilaa@gmail.com</a>
       </address> <!--  .footer2 -->
       <div class="footer__actions">
-        <button class="button button-get-started">Get Started</button>
-        <button class="button button-get-info">Get info</button>
+        <button class="button button-get-started footer__button-get-started">Get Started</button>
+        <button class="button button-get-info footer__button-get-info">Get info</button>
         <ul class="social-networks">
           <li><a class="sn-icon vk" href="http://vk.com/" target="_blank"></a></li>
           <li><a class="sn-icon fb" href="http://facebbook.com/" target="_blank"></a></li>

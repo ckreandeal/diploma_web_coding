@@ -3,13 +3,10 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 20px;
+  padding: 25px 20px 0;
   margin: 0;
 }
 
-.container.footer {
-  padding: 25px 20px 0;
-}
 
 .footer__contacts, .footer__actions {
   margin-top: 20px;
@@ -20,23 +17,19 @@
   flex-direction: column;
   align-items: flex-start;
   font-size: 15px;
-  color: #c5cad7;
-}
-
-.footer__contacts .contacts {
   color: #8993ad;
 }
 
-.footer__contacts .contacts:not(:first-child){
+.footer__contact:not(:first-child){
   margin: 25px 0 0 ;
 }
 
-.footer__menu .footer__menu__item {
+.footer__menu__item {
   margin-bottom: 10px;
   line-height: 25px;
 }
 
-.footer__menu .footer__menu__item a{
+.footer__menu__item a{
   font-size: 15px;
   color: #8993ad;
 }
@@ -47,11 +40,11 @@
   margin-top: 30px;
 }
 
-.footer__actions .button-get-started {
+.footer__button-get-started {
   display: none;
 }
 
-.footer__actions .button-get-info {
+.footer__button-get-info {
     margin: 0;
   }
 
@@ -103,7 +96,7 @@
 }
 
 @media (min-width: 768px) {
-  .container.footer {
+  .footer {
     padding: 100px 0 75px;
   }
 
@@ -126,15 +119,15 @@
     max-width: 250px;
   }
 
-  .footer__contacts .contacts:not(:first-child) {
+  .footer__contact:not(:first-child) {
     margin: 20px 0 0 ;
   }
 
-  .footer__contacts .contacts {
+  .footer__contact {
     font-size: 25px;
   }
 
-  .footer__actions .button-get-started {
+  .footer__button-get-started {
     width: 250px;
     display: block;
     margin-right: 0;
@@ -142,7 +135,7 @@
     background-color: #fff;
   }
 
-  .footer__actions .button-get-info {
+  .footer__button-get-info {
     display: none;
   }
 
@@ -157,7 +150,7 @@
 }
 
 @media (min-width: 1025px) {
-  .container.footer {
+  .footer {
     padding: 80px 0 75px;
   }
 }

@@ -2,7 +2,7 @@
   background-color: #fff;
 }
 
-.header .container {
+.header__wrapper {
   padding: 27px 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -63,14 +63,14 @@
   align-self: center;
 }
 
-.menu__item a:hover {
+.menu__item:hover {
   color: #21e6c1;
   border-bottom: 1px solid #21e6c1;
 }
 
 
 @media (min-width: 768px) {
-  .header .container {
+  .header__wrapper {
     padding: 30px 0;
   }
 
@@ -104,7 +104,7 @@
     justify-content: flex-start;
   }
 
-  .menu__item:not(:first-child){
+  .menu li:not(:first-child){
     margin-left: 30px;
     align-self: center;
   }
