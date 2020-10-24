@@ -261,9 +261,13 @@ img {
   object-fit: cover;
 }
 
-.porfolio__card__title {
-  padding-top: 15px;
+.portfolio__card__title {
+  margin-top: 15px;
   font-size: 18px;
+  align-self: center;
+}
+
+.portfolio__card__title a {
   color: #8993ad;
 }
 
@@ -448,7 +452,7 @@ img {
     padding: 80px 0 100px;
   }
 
-  .porfolio__card__title {
+  .portfolio__card__title {
     text-align: center;
     font-size: 25px;
   }
@@ -513,12 +517,12 @@ img {
   .content__name {
     font-size: 80px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .content__title {
     font-size: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .services {
@@ -573,11 +577,15 @@ img {
   .protfolio__card__picture {
     max-width: 370px;
     height: 310px;
+    /* margin-bottom: 30px; */
   }
 
-  .porfolio__card__title {
+  .portfolio__card__title {
     font-size: 20px;
+    margin-top: 35px;
   }
+
+
 
   .slider__button {
     display: block;
