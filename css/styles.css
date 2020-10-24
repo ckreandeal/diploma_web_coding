@@ -392,6 +392,7 @@ img {
     height: 68px;
     width: 100%;
     margin: 0;
+    margin-top: 5px;
   }
 
   .main-block__content {
@@ -401,7 +402,7 @@ img {
   .content__name {
     font-size: 54px;
     font-weight: bold;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
