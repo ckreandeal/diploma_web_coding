@@ -54,9 +54,16 @@
   }
 
 .footer__social-networks {
+  margin: 50px 0 40px;
+}
+
+.social-networks {
   display: flex;
   flex-wrap: nowrap;
-  margin: 50px 0 40px;
+}
+
+.footer__social-networks > * {
+  margin-right: 10px;
 }
 
 .social-networks__link {
@@ -67,7 +74,7 @@
   background-repeat: no-repeat;
   color: white;
   background-image: url('../img/icons.png');
-  margin-right: 10px;
+
 }
 
 .social-networks__link--vk {
@@ -86,7 +93,7 @@
   background-position: -160px 2px;
 }
 
-.copyright {
+.footer__copyright {
   padding: 15px 0;
   display: block;
   background-color: #071e3d;
