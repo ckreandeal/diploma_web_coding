@@ -53,17 +53,20 @@
   font-size: 18px;
   flex-grow: 0;
   margin-right: 0;
+  transition: color 300ms;
 }
+
 
 .menu__item {
     position: relative;
+    transition: color 300ms;
   }
 
 .menu__item:not(:first-child) {
   align-self: center;
 }
 
-.menu__item:hover {
+.menu__item:hover, .menu__item:focus, .header__contacts:hover, .header__contacts:focus  {
   color: #21e6c1;
   border-bottom: 1px solid #21e6c1;
 }

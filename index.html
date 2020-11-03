@@ -17,7 +17,7 @@
       <button class="header__toggle" href="#" area-label="open menu"></button>
       <nav class="header__menu">
         <ul class="menu">
-          <li ><a class="menu__item" href="#srvices">Services</a></li> <!--  .menu__item -->
+          <li ><a class="menu__item" href="#services">Services</a></li> <!--  .menu__item -->
           <li ><a class="menu__item" href="#portfolio">Portfolio</a></li> <!--  .menu__item -->
           <li ><a class="menu__item" href="#pricing">Pricing</a></li> <!--  .menu__item -->
         </ul> <!--  .menu -->
@@ -55,29 +55,37 @@
           <li class="services__item list__item--3">Frontend development <br>and coding</li> <!--  .list__item -->
           <li class="services__item list__item--4">Fixing issues and <br>layout optimization</li> <!--  .list__item -->
         </ul> <!--  .services__list -->
-        <button class="button button-get-info services__button">Get info</button>
+        <button class="button button-get-info services__button ">Get info</button>
       </div> <!--  .container -->
-    </section> <!--  .srvices -->
+    </section> <!--  .services -->
     <section class="portfolio" id="portfolio">
       <div class="container portfolio__wrapper">
         <h2 class="section__title">My projects</h2> <!--  .section__title -->
         <div class="slider">
           <ul class="slider__list">
-              <li class="slider__item potfolio__card card">
-                <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-                <a class="card__title" href="#"> Children clothes website</a> <!--  .card__title -->
-              </li> <!--  .potfolio__card -->
             <li class="slider__item potfolio__card card">
+              <a href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <a class="card__title" href="#"> News website</a> <!--  .card__title -->
+              <span class="card__title"> Children clothes website</span> <!--  .card__title -->
+              </a>
             </li> <!--  .potfolio__card -->
             <li class="slider__item potfolio__card card">
+              <a href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <a class="card__title" href="#"> Cool Facts - mobile app</a> <!--  .card__title -->
+              <span class="card__title"> News website</span> <!--  .card__title -->
+              </a>
             </li> <!--  .potfolio__card -->
             <li class="slider__item potfolio__card card">
+              <a href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <a class="card__title" href="#"> Chat bot app</a> <!--  .card__title -->
+              <span class="card__title"> Cool Facts - mobile app</span> <!--  .card__title -->
+              </a>
+            </li> <!--  .potfolio__card -->
+            <li class="slider__item potfolio__card card">
+              <a href="#">
+              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
+              <span class="card__title" > Chat bot app</span> <!--  .card__title -->
+              </a>
             </li> <!--  .potfolio__card -->
           </ul>
           <div class="slider__pagination paginator"></div>
@@ -96,8 +104,8 @@
           <span class="elements__item elements__item--4">{}</span>
           <span class="elements__item elements__item--5">&lt;div&gt;</span>
         </div> <!--  .elements -->
-        <p class="pricing__main-text">Responsive web <br>design for all <br>devices and browsers from <br>10$ in just 4 hours.</p> <!--  .main_text -->
-        <p class="pricing__comment">Limits and price <br>may depend on <br>requirenments and <br>conditions</p> <!--  .comment -->
+        <p class="pricing__main-text">Responsive web design for all devices and browsers from 10$ in just 4 hours.</p> <!--  .main_text -->
+        <p class="pricing__comment">Limits and price may depend on requirenments and conditions</p> <!--  .comment -->
       </div> <!--  .container -->
     </section> <!--  .pricing -->
   </main>
@@ -105,9 +113,9 @@
     <div class="container footer" id="footer-container">
       <nav>
         <ul class="footer-menu">
-          <li class="footer-menu__item"><p><a href="#">Services</a></p></li>
-          <li class="footer-menu__item"><p><a href="#">Portfolio</a></p></li>
-          <li class="footer-menu__item"><p><a href="#">Pricing</a></p></li>
+          <li class="footer-menu__item"><p><a href="#services">Services</a></p></li>
+          <li class="footer-menu__item"><p><a href="#portfolio">Portfolio</a></p></li>
+          <li class="footer-menu__item"><p><a href="#pricing">Pricing</a></p></li>
         </ul>
       </nav>
       <address class="footer__contacts">
@@ -129,7 +137,6 @@
   </footer>
   <script src="js/swiper.min.js"></script>
   <script src="js/slider.js"></script>
-
 </body>
 
 </html>

@@ -52,6 +52,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -140,6 +141,26 @@ img {
   margin: 10px 0;
 }
 
+@keyframes textcolor {
+  from {
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    background: -webkit-linear-gradient(#278ea5, #1f4287);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+.content__name:hover {
+  animation-name: textcolor;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
 .content__title {
   font-size: 16px;
   text-align: center;
@@ -189,10 +210,24 @@ img {
   background: no-repeat top;
   line-height: 24px;
   font-size: 16px;
+  transition: border 300ms;
+  transition: background-color 300ms;
+  transition: padding-top 300ms;
+  transition: transform 300ms;
 }
 
 .services__item:not(:last-child) {
   margin-bottom: 51px;
+}
+
+.services__item:hover, .services__item:focus {
+  height: 120%;
+  border: 1px solid #071e3d50;
+  border-radius: 20px;
+  padding-top: 100px;
+  background-position: center 10%;
+  transform: scale(1.2);
+  background-color: #278ea515;
 }
 
 .list__item--1 {
@@ -253,12 +288,31 @@ img {
 
 .slider__item {
   flex-shrink: 0;
+  transition: border 300ms;
 }
+
+.slider__item:hover {
+  border: 2px solid #071e3d50;
+  border-radius: 20px;
+}
+
+.slider__item:hover .protfolio__card__picture {
+  border-radius: 20px;
+}
+
+.slider__item a:focus {
+  font-size: 150%;
+  color: #071e3d;
+  margin-top: 10px;
+
+}
+
 
 .protfolio__card__picture {
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: border-radius 300ms;
 }
 
 .card__title {
@@ -267,8 +321,17 @@ img {
   font-size: 18px;
   text-align: center;
   color: #8993ad;
+  transition: margin-top 300ms;
+  transition: color 300ms;
+  transition: font-size 300ms;
 }
 
+.slider__item:hover .card__title{
+  font-size: 150%;
+  color: #071e3d;
+  margin-top: 10px;
+
+}
 
 .slider__pagination {
   margin-top: 100px;
@@ -350,7 +413,8 @@ img {
     max-width: 945px;
   }
 
-  .button:hover {
+  .button:hover, .button:focus-visible {
+    transition: box-shadow 300ms;
     box-shadow: 2px 2px 5px gray;
   }
 
@@ -620,7 +684,7 @@ img {
     background-image: url('../img/arrow.png');
   }
 
-  .slider__button:hover {
+  .slider__button:hover, .slider__button:focus {
     box-shadow: 2px 2px 5px gray;
   }
 

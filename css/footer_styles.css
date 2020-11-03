@@ -18,11 +18,16 @@
   align-items: flex-start;
   font-size: 15px;
   color: #8993ad;
+
 }
 
 .footer__contacts ion-icon {
   color: #071e3d;
   margin-right: 25px;
+}
+
+.footer__contact {
+  transition: color 300ms;
 }
 
 .footer__contact:not(:first-child){
@@ -37,6 +42,12 @@
 .footer-menu__item a{
   font-size: 15px;
   color: #8993ad;
+  transition: color 300ms;
+}
+
+.footer-menu__item:hover a, .footer-menu__item:focus a, .footer__contact:hover, .footer__contact:focus {
+  color: #21e6c1;
+  border-bottom: 1px solid #21e6c1;
 }
 
 .footer__actions {
@@ -74,7 +85,14 @@
   background-repeat: no-repeat;
   color: white;
   background-image: url('../img/icons.png');
+  transition: transform 300ms;
 
+}
+
+.social-networks__link:hover{
+  background-color: #278ea510;
+  border-radius: 10%;
+  transform: rotate(360deg);
 }
 
 .social-networks__link--vk {
@@ -133,6 +151,8 @@
   .footer__contact {
     font-size: 25px;
   }
+
+
 
   .footer__button-get-started {
     width: 250px;
