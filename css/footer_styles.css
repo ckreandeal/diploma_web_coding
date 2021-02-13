@@ -7,8 +7,8 @@
   margin: 0;
 }
 
-
-.footer__contacts, .footer__actions {
+.footer__contacts,
+.footer__actions {
   margin-top: 20px;
 }
 
@@ -18,7 +18,6 @@
   align-items: flex-start;
   font-size: 15px;
   color: #8993ad;
-
 }
 
 .footer__contacts ion-icon {
@@ -30,8 +29,8 @@
   transition: color 300ms;
 }
 
-.footer__contact:not(:first-child){
-  margin: 25px 0 0 ;
+.footer__contact:not(:first-child) {
+  margin: 25px 0 0;
 }
 
 .footer-menu__item {
@@ -39,13 +38,16 @@
   line-height: 25px;
 }
 
-.footer-menu__item a{
+.footer-menu__item a {
   font-size: 15px;
   color: #8993ad;
   transition: color 300ms;
 }
 
-.footer-menu__item:hover a, .footer-menu__item:focus a, .footer__contact:hover, .footer__contact:focus {
+.footer-menu__item:hover a,
+.footer-menu__item:focus a,
+.footer__contact:hover,
+.footer__contact:focus {
   color: #21e6c1;
   border-bottom: 1px solid #21e6c1;
 }
@@ -61,8 +63,8 @@
 }
 
 .footer__button-get-info {
-    margin: 0;
-  }
+  margin: 0;
+}
 
 .footer__social-networks {
   margin: 50px 0 40px;
@@ -84,12 +86,11 @@
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  background-image: url('../img/icons.png');
+  background-image: url("../img/icons.png");
   transition: transform 300ms;
-
 }
 
-.social-networks__link:hover{
+.social-networks__link:hover {
   background-color: #278ea510;
   border-radius: 10%;
   transform: rotate(360deg);
@@ -125,7 +126,9 @@
     padding: 100px 0 75px;
   }
 
-    .footer-menu, .footer__contacts, .footer__actions {
+  .footer-menu,
+  .footer__contacts,
+  .footer__actions {
     margin: 0;
   }
 
@@ -145,14 +148,12 @@
   }
 
   .footer__contact:not(:first-child) {
-    margin: 20px 0 0 ;
+    margin: 20px 0 0;
   }
 
   .footer__contact {
     font-size: 25px;
   }
-
-
 
   .footer__button-get-started {
     width: 250px;
@@ -181,4 +182,3 @@
     padding: 80px 0 75px;
   }
 }
-

@@ -14,19 +14,19 @@
   outline: none;
   width: 24px;
   height: 24px;
-  background: url('../img/menu_mobile_blue.png') center no-repeat;
+  background: url("../img/menu_mobile_blue.png") center no-repeat;
   background-size: contain;
   border: none;
 }
 
 .button-active {
-  background: url('../img/close.png') center no-repeat;
+  background: url("../img/close.png") center no-repeat;
 }
 
 .header .button-get-started {
   border: none;
   border-radius: 50%;
-  background: #fff url('../img/call_icon_blue.png') center no-repeat;
+  background: #fff url("../img/call_icon_blue.png") center no-repeat;
   width: 30px;
   font-size: 0;
 }
@@ -56,21 +56,22 @@
   transition: color 300ms;
 }
 
-
 .menu__item {
-    position: relative;
-    transition: color 300ms;
-  }
+  position: relative;
+  transition: color 300ms;
+}
 
 .menu__item:not(:first-child) {
   align-self: center;
 }
 
-.menu__item:hover, .menu__item:focus, .header__contacts:hover, .header__contacts:focus  {
+.menu__item:hover,
+.menu__item:focus,
+.header__contacts:hover,
+.header__contacts:focus {
   color: #21e6c1;
   border-bottom: 1px solid #21e6c1;
 }
-
 
 @media (min-width: 768px) {
   .header__wrapper {
@@ -78,7 +79,7 @@
   }
 
   .header {
-  background-color: transparent;
+    background-color: transparent;
   }
 
   .header__toggle {
@@ -86,7 +87,7 @@
     height: 45px;
   }
 
- .header .button-get-started {
+  .header .button-get-started {
     color: #071e3d;
     border: 1px solid #21e6c1;
     border-radius: 0;
@@ -107,21 +108,20 @@
     justify-content: flex-start;
   }
 
-  .menu li:not(:first-child){
+  .menu li:not(:first-child) {
     margin-left: 30px;
     align-self: center;
   }
 }
 
-@media (min-width: 1025px)  {
+@media (min-width: 1025px) {
   .header__toggle {
     display: none;
   }
 
-  .header__menu{
+  .header__menu {
     display: block;
     order: -1;
     width: auto;
   }
 }
-
