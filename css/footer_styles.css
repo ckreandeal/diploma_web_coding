@@ -26,7 +26,8 @@
 }
 
 .footer__contact {
-  transition: color 300ms;
+  border-bottom: 1px solid transparent;
+  transition: color 300ms, border-color 300ms;
 }
 
 .footer__contact:not(:first-child) {
@@ -44,12 +45,12 @@
   transition: color 300ms;
 }
 
-.footer-menu__item:hover a,
-.footer-menu__item:focus a,
+.footer-menu__item a:hover,
+.footer-menu__item a:focus,
 .footer__contact:hover,
 .footer__contact:focus {
   color: #21e6c1;
-  border-bottom: 1px solid #21e6c1;
+  border-color: #21e6c1;
 }
 
 .footer__actions {

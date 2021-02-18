@@ -53,7 +53,8 @@
   font-size: 18px;
   flex-grow: 0;
   margin-right: 0;
-  transition: color 300ms;
+  transition: color 300ms, border-color 300ms;
+  border-bottom: 1px solid transparent;
 }
 
 .menu__item {
@@ -70,7 +71,7 @@
 .header__contacts:hover,
 .header__contacts:focus {
   color: #21e6c1;
-  border-bottom: 1px solid #21e6c1;
+  border-color: #21e6c1;
 }
 
 @media (min-width: 768px) {

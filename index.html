@@ -23,7 +23,7 @@
 <body>
   <header class="header">
     <div class="container header__wrapper" id="header-container">
-      <button class="header__toggle" href="#" area-label="open menu"></button>
+      <button class="header__toggle" name="open menu"></button>
       <nav class="header__menu">
         <ul class="menu">
           <li ><a class="menu__item" href="#services">Services</a></li> <!--  .menu__item -->
@@ -32,7 +32,7 @@
         </ul> <!--  .menu -->
       </nav>
       <a class="header__contacts" href="tel:+353852860646" target="_blank">+353 (85) 286-06-46</a> <!--  .contacts -->
-      <button class="button button-get-started button-get-started--mobile">Get Started</button>
+      <button class="button button-get-started button-get-started--mobile" onclick="openForm()">Get Started</button>
     </div> <!--  .container -->
   </header>
   <main>
@@ -51,7 +51,7 @@
         <div class="main-block__content">
           <h1 class="content__name">Danila Kornilov</h1> <!--  .content__name -->
           <p class="content__title">Full stack Python developer</p> <!--  .content__title -->
-          <button class="button button-get-info">Get info</button>
+          <button class="button button-get-info" onclick="openForm()">Get info</button>
         </div> <!--  .main-block__content -->
       </div> <!--  #top_card -->
     </section> <!--  .main-block -->
@@ -64,7 +64,7 @@
           <li class="services__item list__item--3">Frontend development <br>and coding</li> <!--  .list__item -->
           <li class="services__item list__item--4">Fixing issues and <br>layout optimization</li> <!--  .list__item -->
         </ul> <!--  .services__list -->
-        <button class="button button-get-info services__button ">Get info</button>
+        <button class="button button-get-info services__button " onclick="openForm()">Get info</button>
       </div> <!--  .container -->
     </section> <!--  .services -->
     <section class="portfolio" id="portfolio">
@@ -73,25 +73,25 @@
         <div class="slider">
           <ul class="slider__list">
             <li class="slider__item potfolio__card card">
-              <a href="#">
+              <a class="silder__link" href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <span class="card__title"> Children clothes website</span> <!--  .card__title -->
               </a>
             </li> <!--  .potfolio__card -->
             <li class="slider__item potfolio__card card">
-              <a href="#">
+              <a class="silder__link" href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <span class="card__title"> News website</span> <!--  .card__title -->
               </a>
             </li> <!--  .potfolio__card -->
             <li class="slider__item potfolio__card card">
-              <a href="#">
+              <a class="silder__link" href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <span class="card__title"> Cool Facts - mobile app</span> <!--  .card__title -->
               </a>
             </li> <!--  .potfolio__card -->
             <li class="slider__item potfolio__card card">
-              <a href="#">
+              <a class="silder__link" href="#">
               <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
               <span class="card__title" > Chat bot app</span> <!--  .card__title -->
               </a>
@@ -101,7 +101,7 @@
           <button class="slider__button slider__button--prev"></button>
           <button class="slider__button slider__button--next"></button>
       </div>
-        <button class="button button-get-info portfolio__button">Get info</button>
+        <button class="button button-get-info portfolio__button" onclick="openForm()">Get info</button>
       </div> <!--  .container -->
     </section> <!--  .portfolio -->
     <section class="pricing" id="pricing">
@@ -113,7 +113,7 @@
           <span class="elements__item elements__item--4">{}</span>
           <span class="elements__item elements__item--5">&lt;div&gt;</span>
         </div> <!--  .elements -->
-        <p class="pricing__main-text">Responsive web design for all devices and browsers from 10$ in just 4 hours.</p> <!--  .main_text -->
+        <h2 class="pricing__main-text">Responsive web design for all devices and browsers from 10$ in just 4 hours.</h2> <!--  .main_text -->
         <p class="pricing__comment">Limits and price may depend on requirenments and conditions</p> <!--  .comment -->
       </div> <!--  .container -->
     </section> <!--  .pricing -->
@@ -122,9 +122,9 @@
     <div class="container footer" id="footer-container">
       <nav>
         <ul class="footer-menu">
-          <li class="footer-menu__item"><p><a href="#services">Services</a></p></li>
-          <li class="footer-menu__item"><p><a href="#portfolio">Portfolio</a></p></li>
-          <li class="footer-menu__item"><p><a href="#pricing">Pricing</a></p></li>
+          <li class="footer-menu__item"><a href="#services">Services</a></li>
+          <li class="footer-menu__item"><a href="#portfolio">Portfolio</a></li>
+          <li class="footer-menu__item"><a href="#pricing">Pricing</a></li>
         </ul>
       </nav>
       <address class="footer__contacts">
@@ -132,8 +132,8 @@
         <a class="footer__contact" href="mailto:kornilovdanilaa@gmail.com" target="_blank"><ion-icon name="mail-open"></ion-icon>kornilovdanilaa@gmail.com</a>
       </address> <!--  .footer2 -->
       <div class="footer__actions">
-        <button class="button button-get-started footer__button-get-started">Get Started</button>
-        <button class="button button-get-info footer__button-get-info">Get info</button>
+        <button class="button button-get-started footer__button-get-started" onclick="openForm()">Get Started</button>
+        <button class="button button-get-info footer__button-get-info" onclick="openForm()">Get info</button>
         <ul class="footer__social-networks social-networks">
           <li><a class="social-networks__link social-networks__link--vk" href="http://vk.com/ckrendel" target="_blank"></a></li>
           <li><a class="social-networks__link social-networks__link--fb" href="http://facebbook.com/kornilovdanila" target="_blank"></a></li>
@@ -144,6 +144,25 @@
     </div>
     <p class="footer__copyright">© Danila Kornilov, 2019-2020</p> <!--  .copyright -->
   </footer>
+
+  <div class="form" id="myForm">
+    <form class="form-container">
+      <h2 class="form__title">Let's schedule a call</h2>
+
+      <label class="form__label" for="form-name"><b>Name</b></label>
+      <input type="text" placeholder="Your name" id="form-name" required>
+
+      <label class="form__label" for="form-email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" id="form-email" required>
+
+      <label class="form__label" for="form-message"><b>Message</b></label>
+      <input type="text" placeholder="What do you want to know" id="form-message" required>
+
+      <button class="form__submit button" type="submit">Send</button>
+      <a class="form__close" href="#" onclick="closeForm()">Close</a>
+    </form>
+
+  </div>
   <script src="js/swiper.min.js"></script>
   <script src="js/slider.js"></script>
 </body>

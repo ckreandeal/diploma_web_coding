@@ -13,15 +13,16 @@ $( document ).ready(function() {
     });
 
 
+
+
 });
 
-window.onload = function() {
-	lax.setup() // init
+function openForm() {
+  $('body').addClass('stop-scrolling')
+  $("#myForm").fadeIn(300).css("display","flex");;
+}
 
-	const updateLax = () => {
-		lax.update(window.scrollY)
-		window.requestAnimationFrame(updateLax)
-	}
-
-	window.requestAnimationFrame(updateLax)
+function closeForm() {
+  $('body').removeClass('stop-scrolling')
+  $("#myForm").fadeOut(200);
 }
