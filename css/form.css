@@ -6,6 +6,8 @@
   z-index: 9;
   background-color: rgba(187, 186, 186, 0.915);
   height: 100vh;
+  width: 100%;
+  align-items: center;
 }
 
 .form-container {
@@ -13,6 +15,7 @@
   padding: 10px;
   background-color: white;
   height: 100vh;
+  margin: 0 auto;
 }
 
 .form__title {
@@ -57,14 +60,9 @@
 }
 
 @media (min-width: 768px) {
-  .form {
-    width: 100%;
-    align-items: center;
-  }
   .form-container {
     padding: 0 20px;
     max-width: 500px;
-    margin: 0 auto;
     height: auto;
   }
 }
