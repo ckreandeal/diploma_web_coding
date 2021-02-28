@@ -1,171 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GZML05JJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R3GZML05JJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-R3GZML05JJ');
-</script>
-	<title>Danila Kornilov</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/script.js"></script>
+      gtag("config", "G-R3GZML05JJ");
+    </script>
+    <title>Danila Kornilov</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-  <header class="header">
-    <div class="container header__wrapper" id="header-container">
-      <button class="header__toggle" name="open menu"></button>
-      <nav class="header__menu">
-        <ul class="menu">
-          <li ><a class="menu__item" href="#services">Services</a></li> <!--  .menu__item -->
-          <li ><a class="menu__item" href="#portfolio">Portfolio</a></li> <!--  .menu__item -->
-          <li ><a class="menu__item" href="#pricing">Pricing</a></li> <!--  .menu__item -->
-        </ul> <!--  .menu -->
-      </nav>
-      <a class="header__contacts" href="tel:+353852860646" target="_blank">+353 (85) 286-06-46</a> <!--  .contacts -->
-      <button class="button button-get-started button-get-started--mobile" onclick="openForm()">Get Started</button>
-    </div> <!--  .container -->
-  </header>
-  <main>
-    <section class="main-block">
-      <div class="container main-block__wrapper" id="top-card">
-        <div class="elements" aria-hidden="true">
-          <span class="elements__item elements__item--1">#</span>
-          <span class="elements__item elements__item--2">&lt;div&gt;</span>
-          <span class="elements__item elements__item--3">&lt;div&gt;</span>
-          <span class="elements__item elements__item--4">&lt;/&gt;</span>
-          <span class="elements__item elements__item--5">{}</span>
-        </div> <!--  .elements -->
-        <div class="main-block__photo-container">
-          <img src="img/main_photo.png" alt="Photo Danila Kornilov" class="photo-container__main-photo" />
-        </div> <!--  .photo-container -->
-        <div class="main-block__content">
-          <h1 class="content__name">Danila Kornilov</h1> <!--  .content__name -->
-          <p class="content__title">Full stack Python developer</p> <!--  .content__title -->
-          <button class="button button-get-info" onclick="openForm()">Get info</button>
-        </div> <!--  .main-block__content -->
-      </div> <!--  #top_card -->
-    </section> <!--  .main-block -->
-    <section class="services" id="services">
-      <div class="container services__wrapper">
-        <h2 class="section__title">Services</h2> <!--  .section__title -->
-        <ul class="services__list">
-          <li class="services__item list__item--1">Landing pages and <br>complex websites development</li> <!--  .list__item -->
-          <li class="services__item list__item--2">Responsive web design <br>for all devices and browsers</li> <!--  .list__item -->
-          <li class="services__item list__item--3">Frontend development <br>and coding</li> <!--  .list__item -->
-          <li class="services__item list__item--4">Fixing issues and <br>layout optimization</li> <!--  .list__item -->
-        </ul> <!--  .services__list -->
-        <button class="button button-get-info services__button " onclick="openForm()">Get info</button>
-      </div> <!--  .container -->
-    </section> <!--  .services -->
-    <section class="portfolio" id="portfolio">
-      <div class="container portfolio__wrapper">
-        <h2 class="section__title">My projects</h2> <!--  .section__title -->
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item potfolio__card card">
-              <a class="silder__link" href="#">
-              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <span class="card__title"> Children clothes website</span> <!--  .card__title -->
-              </a>
-            </li> <!--  .potfolio__card -->
-            <li class="slider__item potfolio__card card">
-              <a class="silder__link" href="#">
-              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <span class="card__title"> News website</span> <!--  .card__title -->
-              </a>
-            </li> <!--  .potfolio__card -->
-            <li class="slider__item potfolio__card card">
-              <a class="silder__link" href="#">
-              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <span class="card__title"> Cool Facts - mobile app</span> <!--  .card__title -->
-              </a>
-            </li> <!--  .potfolio__card -->
-            <li class="slider__item potfolio__card card">
-              <a class="silder__link" href="#">
-              <img src="img/children_website.jpg" alt="Children clothes website" class="protfolio__card__picture" />
-              <span class="card__title" > Chat bot app</span> <!--  .card__title -->
-              </a>
-            </li> <!--  .potfolio__card -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrapper" id="header-container">
+        <button class="header__toggle" name="open menu"></button>
+        <nav class="header__menu">
+          <ul class="menu">
+            <li><a class="menu__item" href="#services">Services</a></li>
+            <!--  .menu__item -->
+            <li><a class="menu__item" href="#portfolio">Portfolio</a></li>
+            <!--  .menu__item -->
+            <li><a class="menu__item" href="#pricing">Pricing</a></li>
+            <!--  .menu__item -->
           </ul>
-          <div class="slider__pagination paginator"></div>
-          <button class="slider__button slider__button--prev"></button>
-          <button class="slider__button slider__button--next"></button>
+          <!--  .menu -->
+        </nav>
+        <a class="header__contacts" href="tel:+353852860646" target="_blank"
+          >+353 (85) 286-06-46</a
+        >
+        <!--  .contacts -->
+        <button
+          class="button button-get-started button-get-started--mobile"
+          onclick="openForm()"
+        >
+          Get Started
+        </button>
       </div>
-        <button class="button button-get-info portfolio__button" onclick="openForm()">Get info</button>
-      </div> <!--  .container -->
-    </section> <!--  .portfolio -->
-    <section class="pricing" id="pricing">
-      <div class="container pricing__wrapper">
-        <div class="elements">
-          <span class="elements__item elements__item--1">#</span>
-          <span class="elements__item elements__item--2">&lt;div&gt;</span>
-          <span class="elements__item elements__item--3">&lt;/&gt;</span>
-          <span class="elements__item elements__item--4">{}</span>
-          <span class="elements__item elements__item--5">&lt;div&gt;</span>
-        </div> <!--  .elements -->
-        <h2 class="pricing__main-text">Responsive web design for all devices and browsers from 10$ in just 4 hours.</h2> <!--  .main_text -->
-        <p class="pricing__comment">Limits and price may depend on requirenments and conditions</p> <!--  .comment -->
-      </div> <!--  .container -->
-    </section> <!--  .pricing -->
-  </main>
-  <footer >
-    <div class="container footer" id="footer-container">
-      <nav>
-        <ul class="footer-menu">
-          <li class="footer-menu__item"><a href="#services">Services</a></li>
-          <li class="footer-menu__item"><a href="#portfolio">Portfolio</a></li>
-          <li class="footer-menu__item"><a href="#pricing">Pricing</a></li>
-        </ul>
-      </nav>
-      <address class="footer__contacts">
-        <a class="footer__contact" href="tel:+353852860646" target="_blank"><ion-icon name="call-sharp"></ion-icon>+353 (85) 286-06-46</a>
-        <a class="footer__contact" href="mailto:kornilovdanilaa@gmail.com" target="_blank"><ion-icon name="mail-open"></ion-icon>kornilovdanilaa@gmail.com</a>
-      </address> <!--  .footer2 -->
-      <div class="footer__actions">
-        <button class="button button-get-started footer__button-get-started" onclick="openForm()">Get Started</button>
-        <button class="button button-get-info footer__button-get-info" onclick="openForm()">Get info</button>
-        <ul class="footer__social-networks social-networks">
-          <li><a class="social-networks__link social-networks__link--vk" href="http://vk.com/ckrendel" target="_blank"></a></li>
-          <li><a class="social-networks__link social-networks__link--fb" href="http://facebbook.com/kornilovdanila" target="_blank"></a></li>
-          <li><a class="social-networks__link social-networks__link--tw" href="http://twitter.com/ckrendel" target="_blank"></a></li>
-          <li><a class="social-networks__link social-networks__link--im" href="http://instagram.com/ckreandeal" target="_blank"></a></li>
-        </ul>
+      <!--  .container -->
+    </header>
+    <main>
+      <section class="main-block">
+        <div class="container main-block__wrapper" id="top-card">
+          <div class="elements" aria-hidden="true">
+            <span class="elements__item elements__item--1">#</span>
+            <span class="elements__item elements__item--2">&lt;div&gt;</span>
+            <span class="elements__item elements__item--3">&lt;div&gt;</span>
+            <span class="elements__item elements__item--4">&lt;/&gt;</span>
+            <span class="elements__item elements__item--5">{}</span>
+          </div>
+          <!--  .elements -->
+          <div class="main-block__photo-container">
+            <img
+              src="img/main_photo.png"
+              alt="Photo Danila Kornilov"
+              class="photo-container__main-photo"
+            />
+          </div>
+          <!--  .photo-container -->
+          <div class="main-block__content">
+            <h1 class="content__name">Danila Kornilov</h1>
+            <!--  .content__name -->
+            <p class="content__title">Full stack Python developer</p>
+            <!--  .content__title -->
+            <button class="button button-get-info" onclick="openForm()">
+              Get info
+            </button>
+          </div>
+          <!--  .main-block__content -->
+        </div>
+        <!--  #top_card -->
+      </section>
+      <!--  .main-block -->
+      <section class="services" id="services">
+        <div class="container services__wrapper">
+          <h2 class="section__title">Services</h2>
+          <!--  .section__title -->
+          <ul class="services__list">
+            <li class="services__item list__item--1">
+              Landing pages and <br />complex websites development
+            </li>
+            <!--  .list__item -->
+            <li class="services__item list__item--2">
+              Responsive web design <br />for all devices and browsers
+            </li>
+            <!--  .list__item -->
+            <li class="services__item list__item--3">
+              Frontend development <br />and coding
+            </li>
+            <!--  .list__item -->
+            <li class="services__item list__item--4">
+              Fixing issues and <br />layout optimization
+            </li>
+            <!--  .list__item -->
+          </ul>
+          <!--  .services__list -->
+          <button
+            class="button button-get-info services__button"
+            onclick="openForm()"
+          >
+            Get info
+          </button>
+        </div>
+        <!--  .container -->
+      </section>
+      <!--  .services -->
+      <section class="portfolio" id="portfolio">
+        <div class="container portfolio__wrapper">
+          <h2 class="section__title">My projects</h2>
+          <!--  .section__title -->
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item potfolio__card card">
+                <a class="silder__link" href="#">
+                  <img
+                    src="img/children_website.jpg"
+                    alt="Children clothes website"
+                    class="protfolio__card__picture"
+                  />
+                  <span class="card__title"> Children clothes website</span>
+                  <!--  .card__title -->
+                </a>
+              </li>
+              <!--  .potfolio__card -->
+              <li class="slider__item potfolio__card card">
+                <a class="silder__link" href="#">
+                  <img
+                    src="img/children_website.jpg"
+                    alt="Children clothes website"
+                    class="protfolio__card__picture"
+                  />
+                  <span class="card__title"> News website</span>
+                  <!--  .card__title -->
+                </a>
+              </li>
+              <!--  .potfolio__card -->
+              <li class="slider__item potfolio__card card">
+                <a class="silder__link" href="#">
+                  <img
+                    src="img/children_website.jpg"
+                    alt="Children clothes website"
+                    class="protfolio__card__picture"
+                  />
+                  <span class="card__title"> Cool Facts - mobile app</span>
+                  <!--  .card__title -->
+                </a>
+              </li>
+              <!--  .potfolio__card -->
+              <li class="slider__item potfolio__card card">
+                <a class="silder__link" href="#">
+                  <img
+                    src="img/children_website.jpg"
+                    alt="Children clothes website"
+                    class="protfolio__card__picture"
+                  />
+                  <span class="card__title"> Chat bot app</span>
+                  <!--  .card__title -->
+                </a>
+              </li>
+              <!--  .potfolio__card -->
+            </ul>
+            <div class="slider__pagination paginator"></div>
+            <button class="slider__button slider__button--prev"></button>
+            <button class="slider__button slider__button--next"></button>
+          </div>
+          <button
+            class="button button-get-info portfolio__button"
+            onclick="openForm()"
+          >
+            Get info
+          </button>
+        </div>
+        <!--  .container -->
+      </section>
+      <!--  .portfolio -->
+      <section class="pricing" id="pricing">
+        <div class="container pricing__wrapper">
+          <div class="elements">
+            <span class="elements__item elements__item--1">#</span>
+            <span class="elements__item elements__item--2">&lt;div&gt;</span>
+            <span class="elements__item elements__item--3">&lt;/&gt;</span>
+            <span class="elements__item elements__item--4">{}</span>
+            <span class="elements__item elements__item--5">&lt;div&gt;</span>
+          </div>
+          <!--  .elements -->
+          <h2 class="pricing__main-text">
+            Responsive web design for all devices and browsers from 10$ in just
+            4 hours.
+          </h2>
+          <!--  .main_text -->
+          <p class="pricing__comment">
+            Limits and price may depend on requirenments and conditions
+          </p>
+          <!--  .comment -->
+        </div>
+        <!--  .container -->
+      </section>
+      <!--  .pricing -->
+    </main>
+    <footer>
+      <div class="container footer" id="footer-container">
+        <nav>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a href="#services">Services</a></li>
+            <li class="footer-menu__item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="footer-menu__item"><a href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+        <address class="footer__contacts">
+          <a class="footer__contact" href="tel:+353852860646" target="_blank"
+            ><ion-icon name="call-sharp"></ion-icon>+353 (85) 286-06-46</a
+          >
+          <a
+            class="footer__contact"
+            href="mailto:kornilovdanilaa@gmail.com"
+            target="_blank"
+            ><ion-icon name="mail-open"></ion-icon>kornilovdanilaa@gmail.com</a
+          >
+        </address>
+        <!--  .footer2 -->
+        <div class="footer__actions">
+          <button
+            class="button button-get-started footer__button-get-started"
+            onclick="openForm()"
+          >
+            Get Started
+          </button>
+          <button
+            class="button button-get-info footer__button-get-info"
+            onclick="openForm()"
+          >
+            Get info
+          </button>
+          <ul class="footer__social-networks social-networks">
+            <li>
+              <a
+                class="social-networks__link social-networks__link--vk"
+                href="http://vk.com/ckrendel"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="social-networks__link social-networks__link--fb"
+                href="http://facebbook.com/kornilovdanila"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="social-networks__link social-networks__link--tw"
+                href="http://twitter.com/ckrendel"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <a
+                class="social-networks__link social-networks__link--im"
+                href="http://instagram.com/ckreandeal"
+                target="_blank"
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p class="footer__copyright">© Danila Kornilov, 2019-2020</p>
+      <!--  .copyright -->
+    </footer>
+
+    <div class="form" id="myForm">
+      <form class="form__container">
+        <h2 class="form__title">Let's schedule a call</h2>
+
+        <label class="form__label" for="form-name">Name</label>
+        <input type="text" placeholder="Your name" id="form-name" required />
+
+        <label class="form__label" for="form-email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          id="form-email"
+          required
+        />
+
+        <label class="form__label" for="form-message">Message</label>
+        <input
+          type="text"
+          placeholder="What do you want to know"
+          id="form-message"
+          required
+        />
+
+        <button class="form__submit button" type="submit">Send</button>
+        <a class="form__close" href="#" onclick="closeForm()"></a>
+        <div class="form__message">Thank you!</div>
+      </form>
+
+      <!-- /.form__message -->
     </div>
-    <p class="footer__copyright">© Danila Kornilov, 2019-2020</p> <!--  .copyright -->
-  </footer>
-
-  <div class="form" id="myForm">
-    <form class="form__container">
-      <h2 class="form__title">Let's schedule a call</h2>
-
-      <label class="form__label" for="form-name">Name</label>
-      <input type="text" placeholder="Your name" id="form-name" required>
-
-      <label class="form__label" for="form-email">Email</label>
-      <input type="email" placeholder="Enter Email" id="form-email" required>
-
-      <label class="form__label" for="form-message">Message</label>
-      <input type="text" placeholder="What do you want to know" id="form-message" required>
-
-      <button class="form__submit button" type="submit">Send</button>
-      <a class="form__close" href="#" onclick="closeForm()"></a>
-    </form>
-
-  </div>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/slider.js"></script>
-</body>
-
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
 </html>

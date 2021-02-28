@@ -14,15 +14,32 @@ $( document ).ready(function() {
 
 
 
+    const form = document.querySelector('.form');
+    const formContainer = form.querySelector('.form__container');
+    const formMessage = form.querySelector('.form__message');
+
+
+    const showMessage = () => {
+      form.classList.add('form--sended');
+    }
+
+    formContainer.addEventListener('submit', (evt) => {
+      // отменяем отправку
+      evt.preventDefault();
+
+      showMessage();
+    });
+
 
 });
 
 function openForm() {
   $('body').addClass('stop-scrolling')
   $("#myForm").fadeIn(300).css("display","flex");;
-}
+};
 
 function closeForm() {
-  $('body').removeClass('stop-scrolling')
   $("#myForm").fadeOut(200);
-}
+  $('body').removeClass('stop-scrolling')
+  $('.form').removeClass('form--sended')
+};

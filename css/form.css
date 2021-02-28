@@ -79,3 +79,24 @@
     right: 10px;
   }
 }
+
+.form--sended label,
+.form--sended input,
+.form--sended button {
+  display: none;
+}
+
+.form__message {
+  display: none;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.form--sended .form__message {
+  display: block;
+}
+
+.form--sended .form__title {
+  margin-right: 40px;
+}
