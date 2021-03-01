@@ -3,6 +3,7 @@ const server = require('browser-sync').create();
 const csso = require('gulp-csso')
 const rename = require("gulp-rename");
 const uglify = require('gulp-uglify-es').default;
+const imagemin = require('gulp-imagemin');
 
 const  js_script = () => {
     return src("js/script.js")
@@ -23,6 +24,13 @@ const css = () => {
     .pipe(csso())
     .pipe(dest('build/css'))
 };
+
+// TODO please check functions for images
+// const img = () => {
+//   return src('img/*')
+//     .pipe(imagemin())
+//     .pipe(dest('img/'))
+// };
 
 const startServer = () => {
   server.init({
