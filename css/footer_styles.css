@@ -87,7 +87,7 @@
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  background-image: url("../img/icons.png");
+  background-image: url("/build/img/icons.png");
   transition: transform 300ms;
 }
 
