@@ -45,7 +45,7 @@
 
 .form__close {
   display: block;
-  background: url("/build/img/close.png") center no-repeat;
+  background: url("../img/close.png") center no-repeat;
   width: 45px;
   height: 45px;
   position: absolute;

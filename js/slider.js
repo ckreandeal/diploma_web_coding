@@ -1,4 +1,7 @@
-new Swiper ('.slider', {
+import Swiper from 'swiper/bundle';
+
+// init Swiper:
+const swiper = new Swiper('.slider', {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,

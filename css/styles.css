@@ -1,10 +1,10 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-@import "/build/css/header_styles.css";
-@import "/build/css/footer_styles.css";
-@import "/build/css/elements.css";
-@import "/build/css/swiper.min.css";
-@import "/build/css/form.css";
+/* @include ("/build/css/header_styles.css");
+@include ("/build/css/footer_styles.css");
+@include ("/build/css/elements.css"); */
+/* @include ("swiper.min.css"); */
+/* @include ("/build/css/form.css"); */
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -12,9 +12,9 @@
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"),
-    url("/fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("/fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
 }
 
 /* roboto-900 - latin_cyrillic */
@@ -23,9 +23,9 @@
   font-style: normal;
   font-weight: 900;
   src: local("Roboto Black"), local("Roboto-Black"),
-    url("/fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("/fonts/roboto-v20-latin_cyrillic-900.woff")
-      format("woff"); /* Modern Browsers */
+    url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
+    /* Super Modern Browsers */
+      url("..//fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"); /* Modern Browsers */
 }
 
 /* roboto-italic - latin_cyrillic */
@@ -34,9 +34,9 @@
   font-style: italic;
   font-weight: 400;
   src: local("Roboto Italic"), local("Roboto-Italic"),
-    url("/fonts/roboto-v20-latin_cyrillic-italic.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("/fonts/roboto-v20-latin_cyrillic-italic.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/roboto-v20-latin_cyrillic-italic.woff") format("woff"); /* Modern Browsers */
 }
 /* roboto-700italic - latin_cyrillic */
 @font-face {
@@ -44,9 +44,9 @@
   font-style: italic;
   font-weight: 700;
   src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
-    url("/fonts/roboto-v20-latin_cyrillic-700italic.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-700italic.woff2") format("woff2"),
     /* Super Modern Browsers */
-      url("/fonts/roboto-v20-latin_cyrillic-700italic.woff") format("woff"); /* Modern Browsers */
+      url("../fonts/roboto-v20-latin_cyrillic-700italic.woff") format("woff"); /* Modern Browsers */
 }
 
 /*colors:
@@ -122,7 +122,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url("/build/img/ellipse_blue.png") no-repeat center 90px;
+  background: url("../img/ellipse_blue.png") no-repeat center 90px;
   background-size: 540px;
   align-items: center;
 }
@@ -227,19 +227,19 @@ img {
 }
 
 .list__item--1 {
-  background-image: url("/build/img/tools-and-utensils.png");
+  background-image: url("../img/tools-and-utensils.png");
 }
 
 .list__item--2 {
-  background-image: url("/build/img/responsive.png");
+  background-image: url("../img/responsive.png");
 }
 
 .list__item--3 {
-  background-image: url("/build/img/programming.png");
+  background-image: url("../img/programming.png");
 }
 
 .list__item--4 {
-  background-image: url("/build/img/coding.png");
+  background-image: url("../img/coding.png");
 }
 
 .services__button {
@@ -419,7 +419,7 @@ img {
     width: 750px;
     height: 630px;
     padding-left: 0;
-    background: url("/build/img/ellipse_blue.png") no-repeat center 250px;
+    background: url("../img/ellipse_blue.png") no-repeat center 250px;
     background-size: contain;
     z-index: -10;
     align-self: flex-end;
@@ -649,7 +649,7 @@ img {
   }
 
   .slider__button--prev {
-    background-image: url("/build/img/arrow.png");
+    background-image: url("../img/arrow.png");
     left: -30px;
   }
 
@@ -660,7 +660,7 @@ img {
     -ms-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     transform: scaleX(-1);
-    background-image: url("/build/img/arrow.png");
+    background-image: url("../img/arrow.png");
   }
 
   .slider__button:hover,

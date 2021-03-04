@@ -1,4 +1,9 @@
-$( document ).ready(function() {
+// const { JSDOM } = require( "jsdom" );
+// const { window } = new JSDOM( "" );
+// const $ = require( "jquery" )( window );
+const $ = jQuery()
+
+$(document).ready(function () {
     console.log( "ready!" );
 
 
@@ -43,3 +48,5 @@ function closeForm() {
   $('body').removeClass('stop-scrolling')
   $('.form').removeClass('form--sended')
 };
+
+// @include('slider.js');

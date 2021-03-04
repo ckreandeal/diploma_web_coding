@@ -14,19 +14,19 @@
   outline: none;
   width: 24px;
   height: 24px;
-  background: url("/build/img/menu_mobile_blue.png") center no-repeat;
+  background: url("../img/menu_mobile_blue.png") center no-repeat;
   background-size: contain;
   border: none;
 }
 
 .button-active {
-  background: url("/build/img/close.png") center no-repeat;
+  background: url("../img/close.png") center no-repeat;
 }
 
 .header .button-get-started {
   border: none;
   border-radius: 50%;
-  background: #fff url("/build/img/call_icon_blue.png") center no-repeat;
+  background: #fff url("../img/call_icon_blue.png") center no-repeat;
   width: 30px;
   font-size: 0;
 }

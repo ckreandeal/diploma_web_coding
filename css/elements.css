@@ -1,6 +1,6 @@
 @keyframes elementsScale {
   from {
-    transform: scale(0) ;
+    transform: scale(0);
   }
   to {
     transform: scale(1) rotate(30deg);
@@ -213,4 +213,3 @@
     top: 200px;
   }
 }
-
