@@ -1,4 +1,4 @@
-const { watch, src, dest, series } = require('gulp');
+const { watch, src, dest, series, task} = require('gulp');
 const server = require('browser-sync').create();
 const csso = require('gulp-csso')
 const rename = require("gulp-rename");
@@ -11,9 +11,9 @@ const mqpacker = require('css-mqpacker');
 const gutil = require('gulp-util');
 const ftp = require('vinyl-ftp');
 const del = require('del');
-const concat = require('gulp-concat')
+const concat = require('gulp-concat');
 
-const clean = () => del('build')
+const clean = () => del('build');
 
 const html = () => {
   return src('*.html')
@@ -34,6 +34,11 @@ const js = () => {
   .pipe(rename({ suffix: '.min' }))
   .pipe(dest('build/js'))
 }
+
+const jsLibs = () => {
+  return src('js/lib/**/*')
+  .pipe(dest('build/js'))
+};
 
 const jsBuild = () => {
   return src('build/js/script.min.js')
@@ -68,7 +73,7 @@ const startServer = () => {
 
   watch('index.html', series(html, reload))
   watch('css/styles.css', series(css, reload))
-  watch('js/script.js', series(js, reload))
+  watch(['js/script.js', 'js/slider.js'], series(js, reload))
 };
 
 const reload = (done) => {
@@ -76,8 +81,8 @@ const reload = (done) => {
   done();
 };
 
-exports.default = series(clean, img, html, fonts,  css, js, startServer)
-exports.build = series(clean, img, html, fonts, css, js, jsBuild)
+exports.default = series(clean, img, html, fonts,  js, css , jsLibs, startServer)
+exports.build = series(clean, img, html, fonts, js, css, jsLibs, jsBuild)
 
 const deploy = () => {
 	let conn = ftp.create({

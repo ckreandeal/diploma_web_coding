@@ -1,12 +1,5 @@
-// const { JSDOM } = require( "jsdom" );
-// const { window } = new JSDOM( "" );
-// const $ = require( "jquery" )( window );
-const $ = jQuery()
-
-$(document).ready(function () {
-    console.log( "ready!" );
-
-
+$(document).ready(function() {
+  console.log( "ready!" );
 
  	$('.header__toggle').on('click', function(event){
     	event.preventDefault()
@@ -14,27 +7,20 @@ $(document).ready(function () {
         $('.header__menu').toggle()
         $('.header__toggle').toggleClass('button-active')
 
-
     });
-
-
 
     const form = document.querySelector('.form');
     const formContainer = form.querySelector('.form__container');
     const formMessage = form.querySelector('.form__message');
-
 
     const showMessage = () => {
       form.classList.add('form--sended');
     }
 
     formContainer.addEventListener('submit', (evt) => {
-      // отменяем отправку
       evt.preventDefault();
-
       showMessage();
     });
-
 
 });
 
@@ -49,4 +35,4 @@ function closeForm() {
   $('.form').removeClass('form--sended')
 };
 
-// @include('slider.js');
+@include('slider.js');
