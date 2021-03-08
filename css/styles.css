@@ -1,20 +1,18 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-/* @include ("/build/css/header_styles.css");
-@include ("/build/css/footer_styles.css");
-@include ("/build/css/elements.css"); */
-/* @include ("swiper.min.css"); */
-/* @include ("/build/css/form.css"); */
+@import "header_styles.css";
+@import "footer_styles.css";
+@import "elements.css";
+@import "swiper.min.css";
+@import "form.css";
 
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"),
-    url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
 }
 
 /* roboto-900 - latin_cyrillic */
@@ -22,10 +20,8 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local("Roboto Black"), local("Roboto-Black"),
-    url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
-    /* Super Modern Browsers */
-      url("..//fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"); /* Modern Browsers */
+  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"); /* Modern Browsers */
 }
 
 /* roboto-italic - latin_cyrillic */
@@ -35,8 +31,7 @@
   font-weight: 400;
   src: local("Roboto Italic"), local("Roboto-Italic"),
     url("../fonts/roboto-v20-latin_cyrillic-italic.woff2") format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/roboto-v20-latin_cyrillic-italic.woff") format("woff"); /* Modern Browsers */
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-italic.woff") format("woff"); /* Modern Browsers */
 }
 /* roboto-700italic - latin_cyrillic */
 @font-face {
@@ -45,8 +40,7 @@
   font-weight: 700;
   src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"),
     url("../fonts/roboto-v20-latin_cyrillic-700italic.woff2") format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/roboto-v20-latin_cyrillic-700italic.woff") format("woff"); /* Modern Browsers */
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-700italic.woff") format("woff"); /* Modern Browsers */
 }
 
 /*colors:
@@ -216,10 +210,7 @@ img {
   background: no-repeat top;
   line-height: 24px;
   font-size: 16px;
-  transition: border 300ms;
-  transition: background-color 300ms;
-  transition: padding-top 300ms;
-  transition: transform 300ms;
+  transition: border 300ms, background-color 300ms, padding-top 300ms, transform 300ms;
 }
 
 .services__item:not(:last-child) {
@@ -312,9 +303,7 @@ img {
   font-size: 18px;
   text-align: center;
   color: #8993ad;
-  transition: margin-top 300ms;
-  transition: color 300ms;
-  transition: font-size 300ms;
+  transition: margin-top 300ms, color 300ms, font-size 300ms;
 }
 
 .slider__pagination {

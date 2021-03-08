@@ -1,38 +1,36 @@
-$(document).ready(function() {
-  console.log( "ready!" );
+$(document).ready(function () {
+  console.log("ready!");
 
- 	$('.header__toggle').on('click', function(event){
-    	event.preventDefault()
-    	$('body, html').toggleClass('scroll-fixed')
-        $('.header__menu').toggle()
-        $('.header__toggle').toggleClass('button-active')
+  $(".header__toggle").on("click", function (event) {
+    event.preventDefault();
+    $("body, html").toggleClass("scroll-fixed");
+    $(".header__menu").toggle();
+    $(".header__toggle").toggleClass("button-active");
+  });
 
-    });
+  const form = document.querySelector(".form");
+  const formContainer = form.querySelector(".form__container");
+  const formMessage = form.querySelector(".form__message");
 
-    const form = document.querySelector('.form');
-    const formContainer = form.querySelector('.form__container');
-    const formMessage = form.querySelector('.form__message');
+  const showMessage = () => {
+    form.classList.add("form--sended");
+  };
 
-    const showMessage = () => {
-      form.classList.add('form--sended');
-    }
+  formContainer.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    showMessage();
+  });
 
-    formContainer.addEventListener('submit', (evt) => {
-      evt.preventDefault();
-      showMessage();
-    });
-
+@include("slider.js");
 });
 
 function openForm() {
-  $('body').addClass('stop-scrolling')
-  $("#myForm").fadeIn(300).css("display","flex");;
-};
+  $("body").addClass("stop-scrolling");
+  $("#myForm").fadeIn(300).css("display", "flex");
+}
 
 function closeForm() {
   $("#myForm").fadeOut(200);
-  $('body').removeClass('stop-scrolling')
-  $('.form').removeClass('form--sended')
-};
-
-@include('slider.js');
+  $("body").removeClass("stop-scrolling");
+  $(".form").removeClass("form--sended");
+}

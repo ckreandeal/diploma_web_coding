@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Danila Kornilov</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-R3GZML05JJ"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3GZML05JJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-R3GZML05JJ");
     </script>
-    <title>Danila Kornilov</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.min.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
-    <script src="./js/jquery-3.4.1.min.js"></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script defer src="./js/swiper.min.js"></script>
+    <script defer src="./js/script.min.js"></script>
   </head>
 
   <body>
@@ -47,16 +41,9 @@
           </ul>
           <!--  .menu -->
         </nav>
-        <a class="header__contacts" href="tel:+353852860646" target="_blank"
-          >+353 (85) 286-06-46</a
-        >
+        <a class="header__contacts" href="tel:+353852860646" target="_blank">+353 (85) 286-06-46</a>
         <!--  .contacts -->
-        <button
-          class="button button-get-started button-get-started--mobile"
-          onclick="openForm()"
-        >
-          Get Started
-        </button>
+        <button class="button button-get-started button-get-started--mobile" onclick="openForm()">Get Started</button>
       </div>
       <!--  .container -->
     </header>
@@ -72,11 +59,7 @@
           </div>
           <!--  .elements -->
           <div class="main-block__photo-container">
-            <img
-              src="./img/main_photo.png"
-              alt="Photo Danila Kornilov"
-              class="photo-container__main-photo"
-            />
+            <img src="./img/main_photo.png" alt="Photo Danila Kornilov" class="photo-container__main-photo" />
           </div>
           <!--  .photo-container -->
           <div class="main-block__content">
@@ -84,9 +67,7 @@
             <!--  .content__name -->
             <p class="content__title">Full stack Python developer</p>
             <!--  .content__title -->
-            <button class="button button-get-info" onclick="openForm()">
-              Get info
-            </button>
+            <button class="button button-get-info" onclick="openForm()">Get info</button>
           </div>
           <!--  .main-block__content -->
         </div>
@@ -98,30 +79,17 @@
           <h2 class="section__title">Services</h2>
           <!--  .section__title -->
           <ul class="services__list">
-            <li class="services__item list__item--1">
-              Landing pages and <br />complex websites development
-            </li>
+            <li class="services__item list__item--1">Landing pages and <br />complex websites development</li>
             <!--  .list__item -->
-            <li class="services__item list__item--2">
-              Responsive web design <br />for all devices and browsers
-            </li>
+            <li class="services__item list__item--2">Responsive web design <br />for all devices and browsers</li>
             <!--  .list__item -->
-            <li class="services__item list__item--3">
-              Frontend development <br />and coding
-            </li>
+            <li class="services__item list__item--3">Frontend development <br />and coding</li>
             <!--  .list__item -->
-            <li class="services__item list__item--4">
-              Fixing issues and <br />layout optimization
-            </li>
+            <li class="services__item list__item--4">Fixing issues and <br />layout optimization</li>
             <!--  .list__item -->
           </ul>
           <!--  .services__list -->
-          <button
-            class="button button-get-info services__button"
-            onclick="openForm()"
-          >
-            Get info
-          </button>
+          <button class="button button-get-info services__button" onclick="openForm()">Get info</button>
         </div>
         <!--  .container -->
       </section>
@@ -185,12 +153,7 @@
             <button class="slider__button slider__button--prev"></button>
             <button class="slider__button slider__button--next"></button>
           </div>
-          <button
-            class="button button-get-info portfolio__button"
-            onclick="openForm()"
-          >
-            Get info
-          </button>
+          <button class="button button-get-info portfolio__button" onclick="openForm()">Get info</button>
         </div>
         <!--  .container -->
       </section>
@@ -206,13 +169,10 @@
           </div>
           <!--  .elements -->
           <h2 class="pricing__main-text">
-            Responsive web design for all devices and browsers from 10$ in just
-            4 hours.
+            Responsive web design for all devices and browsers from 10$ in just 4 hours.
           </h2>
           <!--  .main_text -->
-          <p class="pricing__comment">
-            Limits and price may depend on requirenments and conditions
-          </p>
+          <p class="pricing__comment">Limits and price may depend on requirenments and conditions</p>
           <!--  .comment -->
         </div>
         <!--  .container -->
@@ -234,28 +194,14 @@
           <a class="footer__contact" href="tel:+353852860646" target="_blank">
             <ion-icon name="call-sharp"></ion-icon>+353 (85) 286-06-46
           </a>
-          <a
-            class="footer__contact"
-            href="mailto:kornilovdanilaa@gmail.com"
-            target="_blank"
-          >
+          <a class="footer__contact" href="mailto:kornilovdanilaa@gmail.com" target="_blank">
             <ion-icon name="mail-open"></ion-icon>kornilovdanilaa@gmail.com
           </a>
         </address>
         <!--  .footer2 -->
         <div class="footer__actions">
-          <button
-            class="button button-get-started footer__button-get-started"
-            onclick="openForm()"
-          >
-            Get Started
-          </button>
-          <button
-            class="button button-get-info footer__button-get-info"
-            onclick="openForm()"
-          >
-            Get info
-          </button>
+          <button class="button button-get-started footer__button-get-started" onclick="openForm()">Get Started</button>
+          <button class="button button-get-info footer__button-get-info" onclick="openForm()">Get info</button>
           <ul class="footer__social-networks social-networks">
             <li>
               <a
@@ -300,20 +246,10 @@
         <input type="text" placeholder="Your name" id="form-name" required />
 
         <label class="form__label" for="form-email">Email</label>
-        <input
-          type="email"
-          placeholder="Enter Email"
-          id="form-email"
-          required
-        />
+        <input type="email" placeholder="Enter Email" id="form-email" required />
 
         <label class="form__label" for="form-message">Message</label>
-        <input
-          type="text"
-          placeholder="What do you want to know"
-          id="form-message"
-          required
-        />
+        <input type="text" placeholder="What do you want to know" id="form-message" required />
 
         <button class="form__submit button" type="submit">Send</button>
         <a class="form__close" href="#" onclick="closeForm()"></a>
@@ -321,7 +257,17 @@
       </form>
       <!-- /.form__message -->
     </div>
-    <script src="js/swiper.min.js"></script>
-    <script type="module" src="js/script.min.js"></script>
+    <!-- <script>
+      function openForm() {
+        $("body").addClass("stop-scrolling");
+        $("#myForm").fadeIn(300).css("display", "flex");
+      }
+
+      function closeForm() {
+        $("#myForm").fadeOut(200);
+        $("body").removeClass("stop-scrolling");
+        $(".form").removeClass("form--sended");
+      }
+    </script> -->
   </body>
 </html>
