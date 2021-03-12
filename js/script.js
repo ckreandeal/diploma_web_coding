@@ -6,13 +6,9 @@ const menu = document.querySelector(".header__menu");
 
 burger.addEventListener('click', function (event) {
   event.preventDefault();
-  if (menu.classList.contains('header__menu--active')) {
-    menu.classList.remove('header__menu--active');
-    menu.classList.add('header__menu--hidden');
-  } else {
-    menu.classList.remove('header__menu--hidden');
-    menu.classList.add('header__menu--active');
-  }
+  menu.classList.toggle('header__menu--active');
+  menu.classList.toggle('header__menu--hidden');
+
   burger.classList.toggle('button-active');
 });
 
@@ -30,45 +26,23 @@ formContainer.addEventListener("submit", (evt) => {
   showMessage();
 });
 
+
 function openForm() {
   body.classList.add("stop-scrolling");
-  fadeIn(form);
+  form.classList.add('form--active');
+
+	setTimeout(() => {
+  	form.classList.add('form--fadeIn');
+  }, 1)
 };
 
 function closeForm() {
   body.classList.remove("stop-scrolling");
-  fadeOut(form);
-};
+  form.classList.remove('form--fadeIn');
 
-
-function fadeIn(element) {
-  let opacity = 0;
-  let intervalID = setInterval(function() {
-
-      if (opacity < 1) {
-          opacity = opacity + 0.1
-          element.style.opacity = opacity;
-      } else {
-          clearInterval(intervalID);
-      }
-      form.classList.remove('form--hidden');
-      form.classList.add('form--active');
-  }, 50);
-};
-
-function fadeOut(element) {
-  var opacity = 1;
-  var intervalID = setInterval(function() {
-
-      if (opacity > 0) {
-          opacity = opacity - 0.1
-          element.style.opacity = opacity;
-      } else {
-          clearInterval(intervalID);
-      }
-      form.classList.remove('form--active');
-      form.classList.add('form--hidden');
-  }, 50);
+	setTimeout(() => {
+  	form.classList.remove('form--active');
+  }, 500)
 };
 
 
