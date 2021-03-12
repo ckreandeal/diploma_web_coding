@@ -56,8 +56,12 @@ const css = () => {
     .pipe(dest("build/css"));
 };
 
-const img = () => {
-  return src("img/**/*.{jpg,png}").pipe(imagemin()).pipe(dest("build/img"));
+const imgMove = () => {
+  return src("img/**/*").pipe(dest("build/img"));
+};
+
+const imgOpt = () => {
+  return src("build/img/**/*.{jpg,png}").pipe(imagemin()).pipe(dest("build/img"));
 };
 
 const startServer = () => {
@@ -77,8 +81,8 @@ const reload = (done) => {
   done();
 };
 
-exports.default = series(clean, img, html, fonts, js, css, jsLibs, startServer);
-exports.build = series(clean, img, html, fonts, js, css, jsLibs, jsBuild);
+exports.default = series(clean, imgMove, html, fonts, js, css, jsLibs, startServer);
+exports.build = series(clean, imgMove, html, fonts, js, css, jsLibs, imgOpt, jsBuild);
 
 const deploy = () => {
   let conn = ftp.create({

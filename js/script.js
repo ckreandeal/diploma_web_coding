@@ -1,36 +1,75 @@
-$(document).ready(function () {
-  console.log("ready!");
 
-  $(".header__toggle").on("click", function (event) {
-    event.preventDefault();
-    $("body, html").toggleClass("scroll-fixed");
-    $(".header__menu").toggle();
-    $(".header__toggle").toggleClass("button-active");
-  });
+console.log("ready!");
 
-  const form = document.querySelector(".form");
-  const formContainer = form.querySelector(".form__container");
-  const formMessage = form.querySelector(".form__message");
+const burger = document.querySelector(".header__toggle");
+const menu = document.querySelector(".header__menu");
 
-  const showMessage = () => {
-    form.classList.add("form--sended");
-  };
+burger.addEventListener('click', function (event) {
+  event.preventDefault();
+  if (menu.classList.contains('header__menu--active')) {
+    menu.classList.remove('header__menu--active');
+    menu.classList.add('header__menu--hidden');
+  } else {
+    menu.classList.remove('header__menu--hidden');
+    menu.classList.add('header__menu--active');
+  }
+  burger.classList.toggle('button-active');
+});
 
-  formContainer.addEventListener("submit", (evt) => {
-    evt.preventDefault();
-    showMessage();
-  });
+const form = document.querySelector(".form");
+const formContainer = form.querySelector(".form__container");
+const formMessage = form.querySelector(".form__message");
+const body = document.querySelector('body');
 
-@include("slider.js");
+const showMessage = () => {
+  form.classList.add("form--sended");
+};
+
+formContainer.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  showMessage();
 });
 
 function openForm() {
-  $("body").addClass("stop-scrolling");
-  $("#myForm").fadeIn(300).css("display", "flex");
-}
+  body.classList.add("stop-scrolling");
+  fadeIn(form);
+};
 
 function closeForm() {
-  $("#myForm").fadeOut(200);
-  $("body").removeClass("stop-scrolling");
-  $(".form").removeClass("form--sended");
-}
+  body.classList.remove("stop-scrolling");
+  fadeOut(form);
+};
+
+
+function fadeIn(element) {
+  let opacity = 0;
+  let intervalID = setInterval(function() {
+
+      if (opacity < 1) {
+          opacity = opacity + 0.1
+          element.style.opacity = opacity;
+      } else {
+          clearInterval(intervalID);
+      }
+      form.classList.remove('form--hidden');
+      form.classList.add('form--active');
+  }, 50);
+};
+
+function fadeOut(element) {
+  var opacity = 1;
+  var intervalID = setInterval(function() {
+
+      if (opacity > 0) {
+          opacity = opacity - 0.1
+          element.style.opacity = opacity;
+      } else {
+          clearInterval(intervalID);
+      }
+      form.classList.remove('form--active');
+      form.classList.add('form--hidden');
+  }, 50);
+};
+
+
+@include("slider.js");

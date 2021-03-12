@@ -1,5 +1,5 @@
 .form {
-  display: none;
+  /* display: flex; */
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +8,14 @@
   height: 100vh;
   width: 100%;
   align-items: center;
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form--active {
+  display: flex;
 }
 
 .form__container {
@@ -56,7 +64,6 @@
 .form__submit {
   background-color: #21e6c1;
   border: none;
-  margin-top: 30px;
   color: #000;
   width: 280px;
   display: block;
