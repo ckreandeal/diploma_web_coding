@@ -90,18 +90,20 @@ const deploy = () => {
     host: connection.host,
     user: connection.user,
     password: connection.password,
-    parallel: 10,
+    parallel: 5,
     log: gutil.log,
   });
 
   let globs = ["build/**"];
 
-  return src(globs, {
-    base: "./build",
-    buffer: false,
-  })
-    .pipe(conn.newer("")) // only upload newer files
-    .pipe(conn.dest(""));
+  return (
+    src(globs, {
+      base: "./build",
+      buffer: false,
+    })
+      // .pipe(conn.newer("/kornilovdanila.design/public_html")) // only upload newer files
+      .pipe(conn.dest("/kornilovdanila.design/public_html"))
+  );
 };
 
 exports.deploy = deploy;
