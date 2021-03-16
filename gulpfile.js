@@ -12,6 +12,7 @@ const gutil = require("gulp-util");
 const ftp = require("vinyl-ftp");
 const del = require("del");
 const cssImport = require("gulp-cssimport");
+const { connection } = require("./config");
 
 const clean = () => del("build");
 
@@ -86,9 +87,9 @@ exports.build = series(clean, imgMove, html, fonts, js, css, jsLibs, imgOpt, jsB
 
 const deploy = () => {
   let conn = ftp.create({
-    host: "",
-    user: "",
-    password: "",
+    host: connection.host,
+    user: connection.user,
+    password: connection.password,
     parallel: 10,
     log: gutil.log,
   });

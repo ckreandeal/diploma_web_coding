@@ -385,6 +385,8 @@ img {
   .container {
     min-width: 720px;
     max-width: 945px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .button:hover,
@@ -410,7 +412,7 @@ img {
     padding-left: 0;
     background: url("../img/ellipse_blue.png") no-repeat center 250px;
     background-size: contain;
-    z-index: -10;
+    z-index: 10;
     align-self: flex-end;
   }
 
@@ -519,7 +521,7 @@ img {
   }
 
   .pricing__wrapper {
-    padding: 75px 0;
+    padding: 75px auto;
   }
 
   .pricing {

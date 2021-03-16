@@ -12,6 +12,7 @@
   animation-fill-mode: forwards;
   background: -webkit-linear-gradient(#278ea5, #1f4287);
   position: absolute;
+  z-index: -1;
 }
 
 .main-block .elements__item {
