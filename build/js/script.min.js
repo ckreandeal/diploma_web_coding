@@ -38,7 +38,7 @@ function closeForm() {
   form.classList.remove('form--fadeIn');
 
 	setTimeout(() => {
-  	form.classList.remove('form--active');
+    form.classList.remove('form--active', 'form--sended');
   }, 500)
 };
 
@@ -58,6 +58,7 @@ const checkValid = (field) => {
     field.classList.remove('form__input--invalid');
     errorField.style.display = 'none';
   } else {
+    field.preventDefault();
     field.classList.add('form__input--invalid');
     errorField.style.display = 'inline';
     errorField.textContent = setMessage(field);
