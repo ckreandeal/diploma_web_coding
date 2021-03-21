@@ -241,15 +241,18 @@
         <h2 class="form__title">Let's schedule a call</h2>
 
         <label class="form__label" for="form-name">Name</label>
-        <input type="text" placeholder="Your name" id="form-name" required />
+        <input class="form__input" type="text" placeholder="Your name" id="formName" required />
+        <span class="error error--name"></span>
 
         <label class="form__label" for="form-email">Email</label>
-        <input type="email" placeholder="Enter Email" id="form-email" required />
+        <input class="form__input" type="email" placeholder="Enter Email" id="formEmail" required />
+        <span class="error error--email"></span>
 
         <label class="form__label" for="form-message">Message</label>
-        <input type="text" placeholder="What do you want to know" id="form-message" required />
+        <input class="form__input" type="text" placeholder="What do you want to know" id="formMessage" required />
+        <span class="error error--message"></span>
 
-        <button class="form__submit button" type="submit">Send</button>
+        <button class="form__submit button" id="formSubmit" type="submit">Send</button>
         <a class="form__close" href="#" onclick="closeForm()"></a>
         <div class="form__message">Thank you!</div>
       </form>

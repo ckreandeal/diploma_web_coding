@@ -1,6 +1,7 @@
 
 console.log("ready!");
 
+// mobile menu toggle
 const burger = document.querySelector(".header__toggle");
 const menu = document.querySelector(".header__menu");
 
@@ -12,6 +13,7 @@ burger.addEventListener('click', function (event) {
   burger.classList.toggle('button-active');
 });
 
+//form
 const form = document.querySelector(".form");
 const formContainer = form.querySelector(".form__container");
 const formMessage = form.querySelector(".form__message");
@@ -20,11 +22,6 @@ const body = document.querySelector('body');
 const showMessage = () => {
   form.classList.add("form--sended");
 };
-
-formContainer.addEventListener("submit", (evt) => {
-  evt.preventDefault();
-  showMessage();
-});
 
 
 function openForm() {
@@ -46,4 +43,42 @@ function closeForm() {
 };
 
 
+//form validation
+
+const setMessage = (field) => {
+  return field.validity.patternMismatch ? 'Pleace enter correct data' : 'Should be not empty'
+};
+
+
+const checkValid = (field) => {
+  const isValid = field.checkValidity();
+  const errorField = field.nextElementSibling;
+
+  if (isValid) {
+    field.classList.remove('form__input--invalid');
+    errorField.style.display = 'none';
+  } else {
+    field.classList.add('form__input--invalid');
+    errorField.style.display = 'inline';
+    errorField.textContent = setMessage(field);
+  };
+
+  console.log(isValid);
+
+  return isValid;
+};
+
+formContainer.addEventListener('submit', function(evt) {
+  evt.preventDefault();
+
+  const fields = Array.from(formContainer.querySelectorAll('.form__input'));
+  const isValid = !fields.map(checkValid).includes(false);
+
+  if (isValid) {
+    showMessage();
+  }
+});
+
+
+//imports
 @include("slider.js");

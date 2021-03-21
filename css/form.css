@@ -37,8 +37,7 @@
   font-weight: bold;
 }
 
-.form__container input[type="text"],
-.form__container input[type="email"] {
+.form__input {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
@@ -47,8 +46,8 @@
   background: #f1f1f1;
 }
 
-.form__container input[type="text"]:focus,
-.form__container input[type="password"]:focus {
+.form__input:hover,
+.form__input:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -108,4 +107,8 @@
 
 .form--sended .form__title {
   margin-right: 40px;
+}
+
+.form__input--invalid {
+  border: 1px solid rgb(105, 0, 0);
 }
