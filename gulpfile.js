@@ -73,7 +73,7 @@ const startServer = () => {
   });
 
   watch("index.html", series(html, reload));
-  watch("./css/styles.css", series(css, reload));
+  watch("./css/**/*.css", series(css, reload));
   watch(["./js/script.js", "./js/slider.js"], series(js, reload));
 };
 

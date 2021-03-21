@@ -35,6 +35,7 @@
 
 .form__label {
   font-weight: bold;
+  display: block;
 }
 
 .form__input {
@@ -74,6 +75,13 @@
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.error {
+  display: none;
+  margin: -20px 0 20px 0;
+  font-size: 0.7rem;
+  color: rgba(105, 0, 0, 0.589);
 }
 
 @media (min-width: 768px) {

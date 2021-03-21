@@ -56,11 +56,10 @@ const checkValid = (field) => {
 
   if (isValid) {
     field.classList.remove('form__input--invalid');
-    errorField.style.display = 'none';
+    errorField.style.display = "none";
   } else {
-    field.preventDefault();
     field.classList.add('form__input--invalid');
-    errorField.style.display = 'inline';
+    errorField.style.display = 'block';
     errorField.textContent = setMessage(field);
   };
 

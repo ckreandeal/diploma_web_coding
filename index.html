@@ -237,18 +237,25 @@
     </footer>
 
     <div class="form" id="myForm">
-      <form class="form__container">
+      <form class="form__container" novalidate>
         <h2 class="form__title">Let's schedule a call</h2>
 
-        <label class="form__label" for="form-name">Name</label>
-        <input class="form__input" type="text" placeholder="Your name" id="formName" required />
+        <label class="form__label" for="formName">Name</label>
+        <input class="form__input" pattern="[A-Za-z]{3,}" type="text" placeholder="Your name" id="formName" required />
         <span class="error error--name"></span>
 
-        <label class="form__label" for="form-email">Email</label>
-        <input class="form__input" type="email" placeholder="Enter Email" id="formEmail" required />
+        <label class="form__label" for="formEmail">Email</label>
+        <input
+          class="form__input"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          type="email"
+          placeholder="Enter Email"
+          id="formEmail"
+          required
+        />
         <span class="error error--email"></span>
 
-        <label class="form__label" for="form-message">Message</label>
+        <label class="form__label" for="formMessage">Message</label>
         <input class="form__input" type="text" placeholder="What do you want to know" id="formMessage" required />
         <span class="error error--message"></span>
 
