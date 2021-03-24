@@ -16,7 +16,6 @@ burger.addEventListener('click', function (event) {
 //form
 const form = document.querySelector(".form");
 const formContainer = form.querySelector(".form__container");
-const formMessage = form.querySelector(".form__message");
 const body = document.querySelector('body');
 
 const showMessage = () => {
