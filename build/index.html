@@ -241,7 +241,14 @@
         <h2 class="form__title">Let's schedule a call</h2>
 
         <label class="form__label" for="formName">Name</label>
-        <input class="form__input" pattern="[A-Za-z]{3,}" type="text" placeholder="Your name" id="formName" required />
+        <input
+          class="form__input"
+          pattern="[A-Za-z\s]{3,}"
+          type="text"
+          placeholder="Your name"
+          id="formName"
+          required
+        />
         <span class="error error--name"></span>
 
         <label class="form__label" for="formEmail">Email</label>
