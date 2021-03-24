@@ -163,7 +163,7 @@ img {
 .content__title {
   font-size: 16px;
   text-align: center;
-  color: #c5c9d6;
+  color: #8a8d98;
   width: 60%;
 }
 
@@ -641,11 +641,11 @@ img {
 
   .slider__button--prev {
     background-image: url("../img/arrow.png");
-    left: -30px;
+    left: 10px;
   }
 
   .slider__button--next {
-    right: -30px;
+    right: 10px;
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
@@ -678,5 +678,15 @@ img {
   .pricing__comment {
     margin-top: 35px;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 1225px) {
+  .slider__button--prev {
+    left: -30px;
+  }
+
+  .slider__button--next {
+    right: -30px;
   }
 }

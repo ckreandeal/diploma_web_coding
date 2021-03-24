@@ -33,11 +33,17 @@
 
 .menu {
   margin: 0;
-  padding: 0;
+  padding: 10px;
+  background-color: rgba(228, 228, 228, 0.308);
   display: flex;
   justify-content: space-between;
   list-style: none;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
 }
+
 .header__menu {
   /* display: none; */
   position: relative;
@@ -132,5 +138,12 @@
     display: block;
     order: -1;
     width: auto;
+  }
+
+  .menu {
+    justify-content: flex-start;
+    position: relative;
+    background-color: transparent;
+    top: 0;
   }
 }
