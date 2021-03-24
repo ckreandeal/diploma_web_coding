@@ -63,7 +63,7 @@ const checkValid = (field) => {
     errorField.textContent = setMessage(field);
   };
 
-  console.log(isValid);
+  // console.log(isValid);
 
   return isValid;
 };
@@ -76,6 +76,12 @@ formContainer.addEventListener('submit', function(evt) {
 
   if (isValid) {
     showMessage();
+  }
+});
+
+form.addEventListener('click', (evt) => {
+  if (evt.target === evt.currentTarget) {
+    closeForm();
   }
 });
 
